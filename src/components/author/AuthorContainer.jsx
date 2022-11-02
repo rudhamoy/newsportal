@@ -1,4 +1,6 @@
 import React from 'react'
+import Featured from '../sidebar/Featured'
+import Ads from './Ads'
 import BlogList from './BlogList'
 
 const AuthorContainer = () => {
@@ -9,8 +11,10 @@ const AuthorContainer = () => {
             <div className="w-[70%]">
                 <BlogList />
             </div>
-            <div className="w-[30%]">
-                <p>side bar</p>
+            <div className="w-[30%] flex flex-col justify-between">
+                <Ads />
+               <Featured />
+               <Ads />
             </div>
         </div>
     </div>
