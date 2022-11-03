@@ -1,10 +1,11 @@
 import './App.css';
+import FeaturedContainer from './components/featured/FeaturedContainer';
 
 function App() {
   return (
-    <div className="bg-gray-200">
-      <h1>hello</h1>
-    </div>
+    <>
+      <FeaturedContainer />
+    </>
   );
 }
 
