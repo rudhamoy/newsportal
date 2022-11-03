@@ -1,14 +1,9 @@
 import './App.css';
-import AuthorContainer from './components/author/AuthorContainer';
-import Footer from './components/navigations/Footer';
-import HeaderNav from './components/navigations/HeaderNav';
 
 function App() {
   return (
     <div className="bg-gray-200">
-      <HeaderNav />
-      <AuthorContainer />
-      <Footer />
+      <h1>hello</h1>
     </div>
   );
 }
