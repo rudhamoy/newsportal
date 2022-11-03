@@ -37,8 +37,8 @@ const BlogList = () => {
             <ListContainer />
             <ListContainer />
             <div>
-            <div className="p-2 rounded-md border bg-amber-600 text-center text-white my-3 text-2xl">
-                <p>MORE STORIES</p>
+            <div className="p-2 rounded-md border bg-amber-600 text-center text-white mt-8 mb-14 text-2xl">
+                <p className="text-yellow-400">MORE STORIES</p>
             </div>
             </div>
         </div>

@@ -9,8 +9,9 @@ const HeaderNav = () => {
         <div className='flex justify-between items-center bg-white px-40 p-3 shadow-md'>
             {/* left */}
             <div className="w-[20%] flex gap-x-2 items-center">
-                <p className="text-amber-600 text-2xl"><span className="underline">dr.</span>p</p>
-                <p className="bg-amber-600 px-2 text-white rounded-full">Daily Research Plot</p>
+                {/* <p className="text-amber-600 text-2xl"><span className="underline">dr.</span>p</p>
+                <p className="bg-amber-600 px-2 text-white rounded-full">Daily Research Plot</p> */}
+                <img src="logo.jpeg" alt="" />
             </div>
             {/* middle */}
             <div className="w-[65%]">
@@ -25,7 +26,7 @@ const HeaderNav = () => {
                 </ul>
             </div>
             {/* right */}
-            <div className="w-[15%] flex justify-around items-center text-amber-600 text-2xl border-l-2">
+            <div className="w-[15%] flex justify-around items-center text-[#bf912d] text-2xl border-l-2">
                 <CgMenuRound />
                 <div className="flex items-center">
                     <BsShare />

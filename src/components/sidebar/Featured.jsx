@@ -8,7 +8,7 @@ const FeaturedCard = () => {
                     <img className="w-[280px] rounded-md" src="https://dailyresearchplot.com/wp-content/uploads/2022/10/1-1030-750x536.jpg" alt="" />
                 </div>
                 <div className="relative">
-                    <p className="text-xs text-amber-600">TV SERIES</p>
+                    <p className="text-xs text-[#bf912d]">TV SERIES</p>
                     <h1 className="font-semibold text-xs">The Fabulous Season 1: Release Date Update And What We Know</h1>
                 </div>
             </div>
@@ -19,7 +19,10 @@ const FeaturedCard = () => {
 const Featured = () => {
     return (
         <div className="bg-white rounded-md p-2">
-            <h1 className="uppercase text-amber-600 font-semibold">Featured Stories</h1>
+            <h1 className="uppercase text-[#bf912d] font-semibold">Featured Stories</h1>
+            <FeaturedCard />
+            <FeaturedCard />
+            <FeaturedCard />
             <FeaturedCard />
             <FeaturedCard />
             <FeaturedCard />

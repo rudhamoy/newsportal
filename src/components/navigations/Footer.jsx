@@ -12,8 +12,8 @@ const Footer = () => {
                 <div className="w-[60%] flex flex-col justify-between">
                     <div>
                         <div className="flex items-center gap-x-1">
-                            <h1 className="text-amber-600">NEWS SECTION</h1>
-                            <div className="bg-amber-600 h-[2px] w-[50px]"></div>
+                            <h1 className="text-[#bf912d]">NEWS SECTION</h1>
+                            <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
                         </div>
                         <div>
                             <p className="text-sm">
@@ -24,13 +24,14 @@ const Footer = () => {
                     <div className="w-[100%] border-b bg-gray-50"></div>
                     <div>
                         <div className="flex gap-x-2 items-center">
-                            <p className="text-amber-600 text-2xl"><span className="underline">dr.</span>p</p>
-                            <p className="bg-amber-600 px-2 text-white rounded-full">Daily Research Plot</p>
+                            {/* <p className="text-amber-600 text-2xl"><span className="underline">dr.</span>p</p>
+                            <p className="bg-amber-600 px-2 text-white rounded-full">Daily Research Plot</p> */}
+                            <img src="logobg.png" alt="" className="w-[220px]" />
                         </div>
-                        <p className='text-sm'>Daily Research Plot is a new-age media company that keeps its reader updated with the latest news headlines from the United States and all over the world. Entertainment, TV News, Shows Premiere Date, Release Date, Celebrity Gossips, and Travel - we help our readers to know about everything running around the world in every field</p>
+                        <p className='text-sm py-3'>Daily Research Plot is a new-age media company that keeps its reader updated with the latest news headlines from the United States and all over the world. Entertainment, TV News, Shows Premiere Date, Release Date, Celebrity Gossips, and Travel - we help our readers to know about everything running around the world in every field</p>
 
                         <div className='flex gap-x-4 items-center my-2'>
-                            <h1 className="text-amber-600">FOllOW US</h1>
+                            <h1 className="text-[#bf912d">FOllOW US</h1>
                             <div className="flex gap-x-3 text-3xl mt-4">
                                 <AiOutlineInstagram />
                                 <CiFacebook />
@@ -43,21 +44,21 @@ const Footer = () => {
                 {/* right footer */}
                 <div className="w-[30%]">
                 <div className="flex items-center gap-x-1">
-                            <h1 className="text-amber-600">QUICK LINKS</h1>
-                            <div className="bg-amber-600 h-[2px] w-[50px]"></div>
+                            <h1 className="text-[#bf912d]">QUICK LINKS</h1>
+                            <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
                         </div>
-                    <ul className="">
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>DMCA Policy</li>
-                        <li>Editorial Policy</li>
-                        <li>Fact-Checking Policy</li>
-                        <li>Ownership, Funding, and Advertising Policy</li>
-                        <li>Privacy Policy</li>
-                        <li>RSS Feeds</li>
-                        <li>Team</li>
-                        <li>Terms and Condition</li>
-                        <li>Write for Us</li>
+                    <ul className="text-sm">
+                        <li className="my-2">About Us</li>
+                        <li className="my-2">Contact Us</li>
+                        <li className="my-2">DMCA Policy</li>
+                        <li className="my-2">Editorial Policy</li>
+                        <li className="my-2">Fact-Checking Policy</li>
+                        <li className="my-2">Ownership, Funding, and Advertising Policy</li>
+                        <li className="my-2">Privacy Policy</li>
+                        <li className="my-2">RSS Feeds</li>
+                        <li className="my-2">Team</li>
+                        <li className="my-2">Terms and Condition</li>
+                        <li className="my-2">Write for Us</li>
                     </ul>
                 </div>
             </div>
