@@ -11,7 +11,10 @@ const Footer = () => {
                 {/* left footer */}
                 <div className="w-[60%] flex flex-col justify-between">
                     <div>
-                        <h1 className="text-amber-600">NEWS SECTION</h1>
+                        <div className="flex items-center gap-x-1">
+                            <h1 className="text-amber-600">NEWS SECTION</h1>
+                            <div className="bg-amber-600 h-[2px] w-[50px]"></div>
+                        </div>
                         <div>
                             <p className="text-sm">
                                 Entertainment | Celebrity News | TV News | Technology News | Movies | Politics | Sports | General News | Trending | Bollywood | Web Stories | Business | Photos
@@ -39,8 +42,11 @@ const Footer = () => {
                 </div>
                 {/* right footer */}
                 <div className="w-[30%]">
-                    <h1 className="text-amber-600">QUICK LINKS</h1>
-                    <ul>
+                <div className="flex items-center gap-x-1">
+                            <h1 className="text-amber-600">QUICK LINKS</h1>
+                            <div className="bg-amber-600 h-[2px] w-[50px]"></div>
+                        </div>
+                    <ul className="">
                         <li>About Us</li>
                         <li>Contact Us</li>
                         <li>DMCA Policy</li>

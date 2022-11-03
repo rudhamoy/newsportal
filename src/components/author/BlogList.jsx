@@ -26,6 +26,7 @@ const BlogList = () => {
                     </div>
                 </div>
             </div>
+            <div className="w-full border bg-gray-400 h-1"></div>
             <ListContainer />
             <ListContainer />
             <ListContainer />
