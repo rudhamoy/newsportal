@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { CiFacebook } from 'react-icons/ci'
 import { FaLinkedinIn } from 'react-icons/fa'
+import { BiCopyright } from 'react-icons/bi'
 
 
 const Footer = () => {
@@ -64,8 +65,8 @@ const Footer = () => {
             </div>
 
             <div className='w-[100%] bg-black text-white py-4'>
-                <p className='text-center'>
-                    2019 - 2022 Daily Research Plot All Rights Reserved.
+                <p className='text-center flex items-center justify-center'>
+                   <BiCopyright /> 2019 - 2022 Daily Research Plot All Rights Reserved.
                 </p>
             </div>
         </div>
