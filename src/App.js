@@ -1,11 +1,15 @@
 import './App.css';
-import FeaturedContainer from './components/featured/FeaturedContainer';
+import AuthorContainer from './components/author/AuthorContainer';
+import Footer from './components/navigations/Footer';
+import HeaderNav from './components/navigations/HeaderNav';
 
 function App() {
   return (
-    <>
-      <FeaturedContainer />
-    </>
+    <div className="bg-gray-200">
+      <HeaderNav />
+      <AuthorContainer />
+      <Footer />
+    </div>
   );
 }
 
