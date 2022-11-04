@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Font";   /*Can be any text*/
+  src: local("FUTURA21"),
+    url("./fonts/FUTURA21.ttf") format("truetype");
+}

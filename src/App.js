@@ -1,15 +1,24 @@
 import './App.css';
-import AuthorContainer from './components/author/AuthorContainer';
-import Footer from './components/navigations/Footer';
-import HeaderNav from './components/navigations/HeaderNav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./fonts/FUTURA21.ttf"
+import Home from './pages/Home';
+import Author from './pages/Author';
+import Archeive from './pages/Archeive';
+import Layout from './components/layout/Layout';
+import Category from './pages/Category';
 
 function App() {
   return (
-    <div className="bg-gray-200">
-      <HeaderNav />
-      <AuthorContainer />
-      <Footer />
-    </div>
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/author" element={<Author />} />
+          <Route path="/archive" element={<Archeive />} />
+          <Route path="/category" element={<Category />} />
+        </Routes>
+      </BrowserRouter>
+    </Layout>
   );
 }
 
