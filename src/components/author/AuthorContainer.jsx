@@ -7,22 +7,22 @@ import AuthorCard from './AuthorCard'
 
 const AuthorContainer = () => {
   return (
-    <div className="px-40 mt-10">
+    <div className="sm:px-40 mt-10 px-2">
       <p className="flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> Author</p>
       <div className="">
         {/* top */}
-        <div className="w-[70%]">
+        <div className="sm:w-[70%] w-full">
           <AuthorCard />
         </div>
-          <div className="w-[70%] my-3 border bg-gray-400 h-1"></div>
+        <div className="sm:w-[70%] w-full my-3 border bg-[#c5c5c5] h-1"></div>
 
         <div className="w-[100%] flex gap-x-3">
           {/* left */}
-          <div className="w-[70%]">
+          <div className="sm:w-[70%] w-full">
             <BlogList />
           </div>
           {/* right */}
-          <div className="w-[30%] flex flex-col items-center gap-y-3">
+          <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
             {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
             <Ads />
             <Featured />
@@ -30,8 +30,8 @@ const AuthorContainer = () => {
           </div>
         </div>
 
-         {/* bottom */}
-         <div className="w-[70%]">
+        {/* bottom */}
+        <div className="sm:w-[70%] w-full">
           <div>
             <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
               <p className="text-yellow-400">MORE STORIES</p>
