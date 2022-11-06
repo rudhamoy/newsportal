@@ -3,7 +3,7 @@ import couplesHug from '../../assets/images/couples_hug.png';
 
 const FeaturedCard = () => {
     return (
-        <div className="p-4 rounded-md border bg-white my-3" >
+        <div className="p-4 rounded-md border bg-white my-3 cursor-pointer" >
             <div className="flex gap-x-2">
                 <div className="">
                     <img className="w-[180px] rounded-md" src={couplesHug} alt="" />

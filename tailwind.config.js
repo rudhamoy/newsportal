@@ -8,7 +8,8 @@ module.exports = {
       fontFamily: {
         futura2: ["FUTURA21"],
         proxima: ["PROXIMALIGHT"],
-        nunito: ["NUNITO"]
+        nunito: ["NUNITO"],
+        newsbt: ["NEWSBT"]
       },
     },
   },

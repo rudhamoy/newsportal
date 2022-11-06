@@ -31,7 +31,7 @@ const AuthorContainer = () => {
         </div>
 
         {/* bottom */}
-        <div className="sm:w-[70%] w-full">
+        <div className="sm:w-[70%] w-full cursor-pointer">
           <div>
             <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
               <p className="text-yellow-400">MORE STORIES</p>
