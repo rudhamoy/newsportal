@@ -1,10 +1,11 @@
 import React from 'react'
-import FeaturedContainer from '../components/featured_hero/FeaturedContainer';
+import HomeContainer from '../components/home/HomeContainer'
+
 
 const Home = () => {
   return (
     <>
-      < FeaturedContainer />
+      < HomeContainer />
     </>
   )
 }

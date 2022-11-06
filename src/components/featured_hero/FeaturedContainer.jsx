@@ -7,7 +7,7 @@ import MasonaryItem from './MasonaryItems'
 import { featuredMesonaryData } from "../../data/featuredMesonaryData";
 
 function FeaturedContainer() {
-    useEffect(() => { }, [])
+
     return (
         <>
             <div className="w-full h-full sm:flex sm:flex-row gap-2 sm:justify-center">
