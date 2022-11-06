@@ -27,7 +27,7 @@ const RelatedPost = () => {
                 <p className="text-[20px] text-[#bf912d]">RELATED POST</p>
                 <div className='h-[2px] w-[82px] bg-[#bf912d]'></div>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="sm:grid grid-cols-2 gap-2">
                 <FeaturedCard />
                 <FeaturedCard />
                 <FeaturedCard />

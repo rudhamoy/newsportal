@@ -156,12 +156,12 @@ const ArticleContainer = ({ image }) => {
 
                 {/* subscribe */}
                 <div className="flex justify-center items-center my-[39px] text-[14px]">
-                    <div className="border-t border-b border-[#e4e4e4] flex justify-between gap-x-6 items-center py-[19px]">
+                    <div className="border-t border-b border-[#e4e4e4] flex sm:flex-row flex-col justify-between gap-x-6 items-center py-[19px]">
                         <div className="flex items-center gap-x-1">
                             <p>Please Subscribe us at <span>Google News</span></p>
                             <img src="Layer16.png" alt="" />
                         </div>
-                        <div className="flex gap-x-2">
+                        <div className="flex gap-x-2 my-2">
                             <p className="whitespace-nowrap">Follow us:</p>
                             <img src="insta.png" alt="" />
                             <img src="facebook.png" alt="" />
