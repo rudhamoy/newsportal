@@ -4,7 +4,7 @@ import cartoon from '../../assets/images/cartoon.png';
 function CategoryListItem() {
     return (
         <>
-            <div className="p-4 rounded-md border bg-white my-2 cursor-pointer">
+            <div className="p-2 rounded-md border bg-white my-2 cursor-pointer">
                 <div className="flex sm:flex-row flex-col gap-x-2">
                     <div className=" relative">
                         <img className="w-[660px] h-[170px] rounded-sm" src={cartoon} alt="" />

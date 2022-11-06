@@ -3,7 +3,7 @@ import React from 'react'
 
 function MasonaryItem({ image, category, icon, title }) {
     return (
-        <div className="bg-white w-full sm:h-[230px] flex sm:flex-col flex-row overflow-hidden">
+        <div className="bg-white w-full sm:h-[230px] flex sm:flex-col flex-row overflow-hidden cursor-pointer">
             <div className="sm:h-[160px] h-[75px] w-[350px] overflow-hidden relative">
                 <img src={image} alt="" />
                 <div className="absolute z-[10] bottom-2 sm:left-6  left-2 flex flex-row justify-start gap-2 items-center">

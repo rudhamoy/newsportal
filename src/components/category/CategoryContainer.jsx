@@ -3,7 +3,6 @@ import { MdArrowForwardIos } from 'react-icons/md'
 import Advertisement from '../ads/Advertisement'
 import Ads from '../author/Ads'
 import FeaturedContainer from '../featured_hero/FeaturedContainer'
-import BlogContainer from '../layout/BlogContainer'
 import Featured from '../sidebar/Featured'
 import CategoryListItem from './CategoryListItem'
 
