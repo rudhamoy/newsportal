@@ -9,8 +9,9 @@ import CategoryListItem from './CategoryListItem'
 function CategoryContainer() {
     return (
         <>
-            <div className="sm:px-36 px-2">
-                <div className="sm:mt-10 flex flex-row items-center gap-2">
+            <div className="px-2 flex flex-col justify-center items-center">
+
+                <div className="sm:mt-10 flex flex-row items-center gap-2 w-[1264px]">
                     <div>
                         <p className="font-bold sm:text-[30px] text-[24px]">TV News</p>
                         <p className="flex items-center gap-x-1 whitespace-nowrap">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News</p>
@@ -25,25 +26,33 @@ function CategoryContainer() {
                 <Advertisement />
                 <FeaturedContainer />
 
-                < div className="flex gap-x-3 py-10" >
-
-                    <div className="sm:w-[70%] w-full">
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <CategoryListItem />
-                        <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
-                            <p className="text-yellow-400">MORE STORIES</p>
+                <div className="mt-[13px]" >
+                    <div className="flex justify-between w-[1264px]">
+                        <div className="">
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            <CategoryListItem />
+                            {/* <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
+                                <p className="text-yellow-400">MORE STORIES</p>
+                            </div> */}
+                        </div>
+                        <div className="sm:flex hidden flex-col items-center gap-y-3">
+                            <Ads />
+                            <Featured />
+                            <Ads bg="white" />
                         </div>
                     </div>
-                    <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
-                        {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
-                        <Ads />
-                        <Featured />
-                        <Ads bg="white" />
+
+                    <div className="w-full sm:w-[837px] cursor-pointer">
+                        <div>
+                            <div className="rounded-[5px] h-[52px] border bg-[#bf912d] text-center mt-8 mb-14 text-[34px] flex justify-center">
+                                <p className="text-[#ffd200]">MORE STORIES</p>
+                            </div>
+                        </div>
                     </div>
                 </div >
 

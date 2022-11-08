@@ -21,7 +21,7 @@ const FeaturedCard = () => {
 
 const Featured = () => {
     return (
-        <div className="bg-white rounded-md p-2 border">
+        <div className="bg-white rounded-md p-2 border w-[404px]">
             <h1 className="uppercase text-[#bf912d] font-semibold">Featured Stories</h1>
             <FeaturedCard />
             <FeaturedCard />
