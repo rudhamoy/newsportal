@@ -25,7 +25,7 @@ function VisualStoriesSlider() {
     }
 
     return (
-        <div className="h-[360px] w-full rounded p-2 bg-[#ffe9bec2] relative">
+        <div className="h-[395px] w-[839px] mt-[30px] rounded-[4px] p-2 bg-white relative drop-shadow-container">
             <div className="flex justify-between rounded-tl-lg rounded">
                 <div className="flex items-center gap-x-2">
                     <p className="text-[#bf912d] font-semibold text-[18px]">VISUAL STORIES</p>
@@ -36,16 +36,16 @@ function VisualStoriesSlider() {
                     <FiChevronRight className="text-[18px]" />
                 </div>
             </div>
-            <div onClick={prevSlide} className="absolute cursor-pointer top-[50%] left-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
+            <div onClick={prevSlide} className="absolute cursor-pointer top-[50%] left-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
                 <FiChevronLeft className="text-[15px] text-[#bf912d] " />
             </div>
-            <div onClick={nextSlide} className="absolute cursor-pointer top-[50%] right-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
+            <div onClick={nextSlide} className="absolute cursor-pointer top-[50%] right-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
                 <FiChevronRight className="text-[15px] text-[#bf912d] " />
             </div>
 
-            <div className="w-full overflow-hidden scroll-smooth overflow-x-scroll carousal-container scrollbar-hide">
+            <div className="w-[811px] h-[321px] mt-[13px] border-[1px] rounded-[6px] overflow-hidden scroll-smooth overflow-x-scroll carousal-container scrollbar-hide">
                 <div className="flex">
-                    <div className="h-[300px] carousal-container bg-white my-2 p-[12px] flex gap-x-[12px] rounded">
+                    <div className="h-[300px] carousal-container bg-white my-2 p-[6px] flex gap-x-[12px] rounded">
                         <VisualStoriesItem image={julia} title={"Julia Garnet looks stunning in the dress by Prada"} />
                         <VisualStoriesItem image={rashmika} title={"Rashmika Mandana wins Audience Hearts by Red Lehenga"} />
                         <VisualStoriesItem image={bikini} title={"Heidi Klum shared some bikini photos"} />

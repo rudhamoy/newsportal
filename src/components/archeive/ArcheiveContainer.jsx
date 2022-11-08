@@ -9,7 +9,7 @@ import Featured from '../sidebar/Featured'
 
 function ArcheiveContainer() {
   return (
-    <div className="sm:px-40 px-2">
+    <div className="px-2 flex flex-col justify-center items-center">
       <div className="sm:mt-10 flex flex-row items-center gap-2">
         <div>
           <p className="font-bold sm:text-[30px] text-[24px]">TV News</p>
@@ -21,38 +21,38 @@ function ArcheiveContainer() {
         </div>
       </div>
 
-      <div className="">
+      <div className="flex justify-center items-center w-[1264px]">
         {/* top */}
-
-        <div className="sm:w-[70%] w-full my-3 border bg-gray-300 h-[3px]"></div>
-
-        <div className="w-[100%] flex gap-x-3">
-          {/* left */}
-          <div className="sm:w-[70%] w-full">
-            <CategoryListItem />
-            <CategoryListItem />
-            <CategoryListItem />
-            <CategoryListItem />
-            <CategoryListItem />
-            <CategoryListItem />
-            <CategoryListItem />
-          </div>
-          {/* right */}
-          <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
-            {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
-            <Ads />
-            <Featured />
-            <Ads bg="white" />
-          </div>
-        </div>
-
-        {/* bottom */}
-        <div className="sm:w-[70%] w-full cursor-pointer">
-          <div>
-            <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
-              <p className="text-yellow-400">MORE STORIES</p>
+        <div className="">
+          <div className="sm:w-[70%] w-full my-3 border bg-gray-300 h-[3px]"></div>
+          <div className="flex gap-x-3">
+            {/* left */}
+            <div className="">
+              <CategoryListItem />
+              <CategoryListItem />
+              <CategoryListItem />
+              <CategoryListItem />
+              <CategoryListItem />
+              <CategoryListItem />
+              <CategoryListItem />
+            </div>
+            {/* right */}
+            <div className=" sm:flex hidden flex-col items-center gap-y-3">
+              <Ads />
+              <Featured />
+              <Ads bg="white" />
             </div>
           </div>
+
+          {/* bottom */}
+          <div className="sm:w-[70%] w-full cursor-pointer">
+            <div>
+              <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
+                <p className="text-yellow-400">MORE STORIES</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>

@@ -2,8 +2,10 @@ import React from 'react'
 
 function VisualStoriesItem({ image, title }) {
     return (
-        <div className="h-[276px] w-[200px] relative rounded overflow-hidden cursor-pointer" >
-            <img src={image} className="h-[350px]" alt="" />
+        <div className="h-[300px] w-[187px] p-2 relative rounded overflow-hidden cursor-pointer" >
+            <div className="h-[300px] w-[187px]">
+                <img src={image} className="h-[100%] w-[100%]" alt="" />
+            </div>
             <p className="absolute z-[1] font-proxima bottom-10 left-0 text-[16px] font-semibold text-white p-2 leading-4">{title}</p>
             <p className="absolute z-[1] bottom-4 left-0 text-white font-bold text-[10px] p-2">AUGUEST 5, 2022</p>
             <p className="absolute z-[1] bottom-[4px] left-0 text-[#daa634] font-bold text-[10px] p-2">CELEBRITY</p>

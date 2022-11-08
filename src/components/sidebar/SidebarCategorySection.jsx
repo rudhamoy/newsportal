@@ -9,7 +9,7 @@ import SideBarItem from './SideBarItem';
 
 function SidebarCategorySection({ category }) {
     return (
-        <div className="bg-white my-2 w-full rounded">
+        <div className="bg-white mt-[30px] h-[560px] w-[404px] rounded-[5px] drop-shadow-container">
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">
@@ -18,14 +18,14 @@ function SidebarCategorySection({ category }) {
                     </div>
 
                 </div>
-                <div className="">
+                <div className="mt-[19px] flex flex-col gap-y-[10px]">
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
 
                 </div>
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center mt-[13px]">
                     <p className="text-[#bf912d] font-semibold text-[16px]">READ ALL</p>
                     <FiChevronRight className="text-[#bf912d] text-[18px]" />
                 </div>

@@ -4,10 +4,10 @@ import panda from '../../assets/images/panda.png';
 import { AiOutlinePicRight } from "react-icons/ai";
 function FeaturedPost() {
     return (
-        <div className="sm:h-[471px] bg-white w-full my-2 sm:my-0 cursor-pointer">
-            <div className="sm:h-[300] w-full overflow-hidden relative ">
-                <img height={300} src={panda} alt="" />
-                <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center">
+        <div className="sm:h-[471px] bg-white w-[635px] rounded-[6px] my-2 sm:my-0 cursor-pointer">
+            <div className="sm:h-[325px] w-[635px] overflow-hidden relative ">
+                <img className="h-[100%]" src={panda} alt="" />
+                <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center drop-shadow-3xl">
                     <AiOutlinePicRight className="text-[#ffd200] font-bold" />
                     <div className="capitalize text-[12px] text-[#ffd200]  font-bold">TV SERIES</div>
                 </div>

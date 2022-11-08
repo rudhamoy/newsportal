@@ -9,7 +9,7 @@ import CategoryListItem from './CategoryListItem'
 function CategoryContainer() {
     return (
         <>
-            <div className="sm:px-40 px-2">
+            <div className="sm:px-36 px-2">
                 <div className="sm:mt-10 flex flex-row items-center gap-2">
                     <div>
                         <p className="font-bold sm:text-[30px] text-[24px]">TV News</p>

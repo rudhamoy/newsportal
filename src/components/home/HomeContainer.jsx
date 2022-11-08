@@ -9,11 +9,14 @@ import SideAds from '../ads/SideAds';
 import VisualStoriesSlider from './VisualStoriesSlider';
 function HomeContainer() {
     return (
-        <div className="sm:mx-40 mx-2 mt-6">
-            <FeaturedContainer />
-            <HotspotSlider />
-            <div className="flex sm:flex-row flex-col gap-x-4">
-                <div className="sm:w-[70%] w-full">
+        <div className="sm:mx-0 mx-2 mt-6 flex flex-col justify-center items-center">
+            <div className="pb-[27px] pt-[37px] flex flex-col justify-center items-center">
+                <FeaturedContainer />
+                <HotspotSlider />
+            </div>
+            <div className="flex justify-between w-[1264px]">
+                {/* content */}
+                <div className="">
                     <CategorySection category={"ENTERTAINMENT"} />
                     <VisualStoriesSlider />
                     <CategorySection category={"TV SERIES NEWS"} />
@@ -26,7 +29,8 @@ function HomeContainer() {
                     <CategoryListItem />
                     <CategoryListItem />
                 </div>
-                <div className="sm:w-[30%] w-full  rounded">
+                {/* sidebar */}
+                <div className="rounded">
                     <SidebarCategorySection category={"CELEBRITY GOSSIPS"} />
                     <div className="h-[360px]">
                         <SideAds bg={"white"} />

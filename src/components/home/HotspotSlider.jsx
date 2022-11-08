@@ -33,7 +33,7 @@ function HotspotSlider() {
     }
 
     return (
-        <div className="w-[100%] bg-[#ffffff] mt-4 rounded-lg  relative">
+        <div className="w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] relative drop-shadow-container">
             <div className="flex justify-between rounded-tl-lg">
                 <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
                     <p className="text-[#ffffff] text-[20px] z-[1] px-[10px]">HOT SPOT</p>
@@ -46,7 +46,7 @@ function HotspotSlider() {
                 </div>
                 <div className="w-[160px]"></div>
             </div>
-            <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1]">
+            <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
                 <FiChevronLeft className="text-[15px] text-[#bf912d] " />
             </div>
             <div className="px-2">
@@ -66,7 +66,7 @@ function HotspotSlider() {
 
                 </div>
             </div>
-            <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500">
+            <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500 drop-shadow-3xl">
                 <FiChevronRight className="text-[15px] text-[#bf912d]" />
             </div>
             <div className="flex sm:hidden gap-x-1 items-center pb-1 mx-[40%]">

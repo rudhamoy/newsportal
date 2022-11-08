@@ -1,13 +1,15 @@
 import React from 'react'
 import videoIcon from '../../assets/icons/video-icon.svg';
 import cartoon from '../../assets/images/cartoon.png';
-function CategoryListItem() {
+function CategoryListItem({width}) {
     return (
         <>
-            <div className="p-2 rounded-md border bg-white my-2 cursor-pointer">
+            <div className={`p-[17px] rounded-md border bg-white my-2 cursor-pointer h-[201px] w-[${width ? width : "837px"}] flex justify-center `}>
                 <div className="flex sm:flex-row flex-col gap-x-2">
                     <div className=" relative">
-                        <img className="w-[660px] h-[170px] rounded-sm" src={cartoon} alt="" />
+                        <div className="w-[315px] h-[165px] rounded-sm overflow-hidden">
+                        <img className="w-[100%] h-[100%]" src={cartoon} alt="" />
+                        </div>
 
                         <div className="absolute  z-[10] bottom-2 sm:left-2  left-2 flex flex-row justify-start gap-1 items-center">
                             <img src={videoIcon} width={15} height={15} className="text-[#ffd200] font-bold" alt="" />

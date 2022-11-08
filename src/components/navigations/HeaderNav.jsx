@@ -39,7 +39,7 @@ const HeaderNav = ({ setShowMenu }) => {
                     </div>
                 </div>
             </div>
-            <div className='hidden sm:flex justify-between items-center px-40 p-3 bg-white shadow-md '>
+            <div className='hidden sm:flex justify-between items-center px-36 p-3 bg-white shadow-md '>
                 {/* DESKTOP */}
 
                 {/* left */}
@@ -50,7 +50,7 @@ const HeaderNav = ({ setShowMenu }) => {
 
                 {/* middle */}
                 <div className="w-[65%]">
-                    <div className="flex items-center justify-around font-[500] text-[15px] px-6 uppercase">
+                    <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase">
                         <div className="cursor-pointer">CELEBRITY</div>
                         <div className="dropdown relative">
                             <div role="button" onClick={() => {
@@ -99,7 +99,9 @@ const HeaderNav = ({ setShowMenu }) => {
                 {/* right */}
                 <div className="w-[15%]">
                     <div className=" flex justify-around items-center text-[#bf912d] border-l-2">
-                        <img src="menuu.png" alt="" />
+                        <div role="button" onClick={() => setShowMenu(true)} className="">
+                            <img src="menuu.png" alt="" />
+                        </div>
                         <div className="flex items-center gap-x-1">
                             <img src="share.png" alt="" />
                             <p className="text-[16px] font-futura2">Follow</p>

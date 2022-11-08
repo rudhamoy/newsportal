@@ -3,16 +3,16 @@ import React from 'react'
 function SideBarItem({ category, title, image }) {
     return (
 
-        <div className="flex flex-row items-center cursor-pointer rounded-md w-full p-2 my-2 z-0 border-2">
-            <div className="h-[80px] w-[80px] bg-black overflow-hidden rounded-md">
-                <img className="h-[100px]" src={image} alt="" />
-            </div>
-            <div className="px-2 relative h-[80px] w-[250px]">
-                <p className="font-futura2 text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
-                <p className="font-proxima text-[14px] leading-5 text-black font-bold">
-                    {title}
-                </p>
-            </div>
+        <div className="flex flex-row items-center p-2 cursor-pointer rounded-[2px] w-[383px] h-[108px] z-0 border-2">
+                <div className="h-[85px] w-[85px] overflow-hidden rounded-sm">
+                    <img className="h-[100%] w-[100%]" src={image} alt="" />
+                </div>
+                <div className="px-2 relative h-[80px] w-[250px]">
+                    <p className="font-futura2 text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
+                    <p className="font-proxima text-[16px] leading-5 text-black font-bold">
+                        {title}
+                    </p>
+                </div>
         </div>
 
     )
