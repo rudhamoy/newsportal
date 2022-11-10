@@ -1,14 +1,14 @@
 import React from 'react'
 import videoIcon from '../../assets/icons/video-icon.svg';
 import cartoon from '../../assets/images/cartoon.png';
-function CategoryListItem({width}) {
+function CategoryListItem({ width }) {
     return (
         <>
-            <div className={`p-[17px] mb-3 rounded-md border bg-white cursor-pointer h-[201px] w-[${width ? width : "837px"}] flex justify-center `}>
+            <div className={`p-[17px] mb-3 rounded-md border bg-white cursor-pointer sm:h-[201px]  sm:w-[${width ? width : "837px"}] flex justify-center `}>
                 <div className="flex sm:flex-row flex-col gap-x-2">
                     <div className=" relative">
-                        <div className="w-[315px] h-[165px] rounded-sm overflow-hidden">
-                        <img className="w-[100%] h-[100%]" src={cartoon} alt="" />
+                        <div className="w-[85vw] sm:w-[315px] h-[165px] rounded-sm overflow-hidden">
+                            <img className="w-[100%] h-[100%]" src={cartoon} alt="" />
                         </div>
 
                         <div className="absolute  z-[10] bottom-2 sm:left-2  left-2 flex flex-row justify-start gap-1 items-center">

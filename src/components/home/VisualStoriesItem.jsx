@@ -1,8 +1,8 @@
 import React from 'react'
 
-function VisualStoriesItem({ image, title }) {
+function VisualStoriesItem({ image, title, index, styles }) {
     return (
-        <div className="h-[300px] w-[187px] p-2 relative rounded overflow-hidden cursor-pointer" >
+        <div style={styles} index={index} className={`h-[300px] w-[187px] p-2 relative rounded overflow-hidden cursor-pointer `}>
             <div className="h-[300px] w-[187px]">
                 <img src={image} className="h-[100%] w-[100%]" alt="" />
             </div>

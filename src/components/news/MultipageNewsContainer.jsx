@@ -9,27 +9,27 @@ import RelatedPost from './RelatedPost'
 
 const MultipageNewsContainer = ({ image }) => {
   return (
-    <div className="sm:px-40 my-6 px-2">
-      <p className="flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News <MdArrowForwardIos className="text-[#bf912d]" /> Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</p>
+    <div className="my-6 px-2 flex justify-center items-center">
+     <div className="w-[100vw] sm:w-[1264px]">
+     <p className="flex flex-wrap items-center gap-x-1 text-[14px] sm:text-[16px] p-2 text-[#6d6d6d] font-[300px]"><span>Home</span> <MdArrowForwardIos className="text-[#bf912d] " /> <span className="whitespace-nowrap">TV News</span> <MdArrowForwardIos className="text-[#bf912d]" /> <span>Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</span></p>
+        <Advertisement />
 
-      <Advertisement />
-
-      <div className="w-[100%] flex gap-x-3">
-        {/* left */}
-        <div className="sm:w-[70%] w-full">
-          <MultiArticleContainer image={image} />
+        <div className=" flex justify-between">
+          {/* left */}
+          <div className="">
+            <MultiArticleContainer image={image} />
+          </div>
+          {/* right */}
+          <div className=" sm:flex hidden flex-col items-center gap-y-3">
+            <SideAds />
+            <Featured />
+            <SideAds bg="white" />
+          </div>
         </div>
-        {/* right */}
-        <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
-          {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
-          <SideAds />
-          <Featured />
-          <SideAds bg="white" />
-        </div>
-      </div>
 
-      <div className='sm:w-[70%] w-full'>
-        <RelatedPost />
+        <div className='w-[100vw] sm:w-[837px] mt-[18px]'>
+          <RelatedPost />
+        </div>
       </div>
     </div>
   )

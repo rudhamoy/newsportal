@@ -29,13 +29,13 @@ const HeaderNav = ({ setShowMenu }) => {
                 </div>
                 <div className="flex items-center gap-x-3 mt-2">
                     <div role="button">
-                        <img src="home.png" alt="" className="h-[20px]" />
+                        <img src="home.png" alt="" className="h-[20px] w-[20px]" />
                     </div>
-                    <div className='uppercase flex items-center gap-x-3 text-[13px] font-futura2'>
+                    <div className='uppercase flex items-center gap-x-3 text-[12px] font-futura2'>
                         <p>Celebrity</p>
                         <p>Entertainment</p>
-                        <p>Tv News</p>
-                        <p>Web Stories</p>
+                        <p className="whitespace-nowrap">Tv News</p>
+                        <p className="whitespace-nowrap">Web Stories</p>
                     </div>
                 </div>
             </div>

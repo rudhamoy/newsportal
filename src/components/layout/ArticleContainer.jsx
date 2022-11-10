@@ -10,8 +10,8 @@ import beardman from '../../assets/images/beard-man.png';
 
 const ArticleContainer = ({ image }) => {
     return (
-        <div className='bg-white rounded-md p-4 mt-3'>
-            <h1 className="sm:text-[36px] text-[30px] font-futura2 text-[#000000] font-bold">Kung Fu Panda: The Dragon Knight Season 2
+        <div className='bg-white rounded-md p-4 mt-[18px] w-[100vw] sm:w-[837px]'>
+            <h1 className="text-[20px] sm:text-[36px] font-futura2 text-[#000000] font-bold">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
             <p className="sm:text-[20px] text-[18px] text-[#6d6d6d] font-proxima font-[300]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
@@ -26,18 +26,18 @@ const ArticleContainer = ({ image }) => {
                             <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
                         </div>
                     </div>
-                    <div className="flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
+                    <div className="hidden sm:flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
                         <img src={facebookColoredIcon} alt="" />
-                        <img src={linkedinColoredIcon} alt="" />
-                        <img src={whatsappColoredIcon} alt="" />
-                        <img src={twiterColoredIcon} alt="" />
-                        <AiOutlineMail className="text-[25px]" />
+                        <img height={24} width={24} src={linkedinColoredIcon} alt="" />
+                        <img height={24} width={24} src={whatsappColoredIcon} alt="" />
+                        <img height={24} width={24} src={twiterColoredIcon} alt="" />
+                        <img height={24} width={24} src="email.png" alt="" />
                     </div>
                 </div>
             </div>
             {/* featured img */}
-            <div className="my-3">
-                <img src={image} alt="" />
+            <div className="my-3 w-[95vw] sm:w-[804px] sm:h-[453px]">
+                <img src={image} alt="" className="w-[100%] h-[100%]" />
             </div>
 
             {/* article */}
@@ -62,8 +62,8 @@ const ArticleContainer = ({ image }) => {
                 </div>
                 <div className="flex sm:flex-row flex-col sm:gap-x-4 gap-y-4">
                     <div className="flex flex-row items-center cursor-pointer">
-                        <div className="h-[100px] w-[120px] bg-black overflow-hidden">
-                            <img className="h-[120px] w-[120px]" src={girlboobs} alt="" />
+                        <div className="h-[100px] w-[181px]  overflow-hidden">
+                            <img className="h-[100px] w-[181px]" src={girlboobs} alt="" />
                         </div>
                         <p className="font-futura2 text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
@@ -73,8 +73,8 @@ const ArticleContainer = ({ image }) => {
                     </div>
                     <div className=" sm:w-1 sm:h-[100px] w-full h-[2px] bg-white"></div>
                     <div className="flex flex-row items-center cursor-pointer">
-                        <div className="h-[100px] w-[120px] bg-black overflow-hidden">
-                            <img className="h-[100px] w-[120px]" src={beardman} alt="" />
+                    <div className="h-[100px] w-[181px]  overflow-hidden">
+                            <img className="h-[100px] w-[181px]" src={beardman} alt="" />
                         </div>
                         <p className="font-futura2 text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
@@ -112,7 +112,10 @@ const ArticleContainer = ({ image }) => {
                         <li>11. The Knight’s Fall Part 2</li>
                     </ul>
 
-                    <img className="my-6" src="Layer15.png" alt="" />
+                    <div className="my-6 w-[95vw] sm:w-[804px] sm:h-[453px]">
+                        <img src="Layer15.png" alt="" className="w-[100%] h-[100%]" />
+                    </div>
+
                     <p className='text-[18px]'>
                         Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
                     </p>
@@ -147,7 +150,7 @@ const ArticleContainer = ({ image }) => {
                 </div>
                 {/* tag list */}
                 <div>
-                    <ul className='text-[16px] flex justify-around'>
+                    <ul className='text-[16px] flex justify-between sm:justify-around flex-wrap gap-2'>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Kungfu Panda</li>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Netflix</li>
@@ -163,11 +166,11 @@ const ArticleContainer = ({ image }) => {
                         </div>
                         <div className="flex gap-x-2 my-2">
                             <p className="whitespace-nowrap">Follow us:</p>
-                            <img src="insta.png" alt="" />
-                            <img src="facebook.png" alt="" />
-                            <img src="twitter.png" alt="" />
-                            <img src="youtube.png" alt="" />
-                            <img src="linkedin.png" alt="" />
+                            <img height={24} width={24} src="insta.png" alt="" />
+                            <img height={24} width={24} src="facebook.png" alt="" />
+                            <img height={24} width={24} src="twitter.png" alt="" />
+                            <img height={24} width={24} src="youtube.png" alt="" />
+                            <img height={24} width={24} src="linkedin.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -182,18 +185,18 @@ const ArticleContainer = ({ image }) => {
                         <div className="flex items-center gap-x-2">
                             <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
                             <div className="flex gap-x-2 items-center">
-                                <img src={facebookColoredIcon} alt="" className="cursor-pointer" />
-                                <img src={linkedinColoredIcon} alt="" className="cursor-pointer" />
-                                <img src={whatsappColoredIcon} alt="" className="cursor-pointer" />
-                                <img src={twiterColoredIcon} alt="" className="cursor-pointer" />
-                                <AiOutlineMail className="text-[25px] cursor-pointer" />
+                                <img src={facebookColoredIcon} alt="" />
+                                <img height={24} width={24} src={linkedinColoredIcon} alt="" />
+                                <img height={24} width={24} src={whatsappColoredIcon} alt="" />
+                                <img height={24} width={24} src={twiterColoredIcon} alt="" />
+                                <img height={24} width={24} src="email.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
-                    <button className="rounded-[5px] w-[297px] bg-[#bf912d] text-white text-[16px] py-[11px]">POST A COMMENT</button>
+                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px]">POST A COMMENT</button>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import SmallerCardItems from './SmallerCardItems';
 
 function CategorySection({ category }) {
     return (
-        <div className="bg-white mt-[30px] w-[839px] h-[560px] rounded-[4px] drop-shadow-container">
+        <div className="bg-white mt-[15px] sm:mt-[30px] w-[95vw] sm:w-[839px] sm:h-[560px] rounded-[4px] drop-shadow-container">
             <div className="p-2">
                 <div className="flex justify-between items-center mb-[17px]">
                     <div className="flex items-center gap-x-2">

@@ -10,7 +10,7 @@ import nadiaUsman from '../../assets/images/nadia-usman.png';
 const AuthorCard = () => {
     return (
         <div>
-            <div className="p-4 rounded-md border bg-white my-3">
+            <div className="p-4 rounded-md border bg-white my-3 w-[837px]">
                 <div className="flex gap-x-4">
                     <div className="overflow-hidden rounded-full h-[110px]">
                         <img className="" src={nadiaUsman} alt="" />

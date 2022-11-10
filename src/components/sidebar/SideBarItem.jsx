@@ -3,7 +3,7 @@ import React from 'react'
 function SideBarItem({ category, title, image }) {
     return (
 
-        <div className="flex flex-row items-center p-2 cursor-pointer rounded-[2px] w-[383px] h-[108px] z-0 border-2">
+        <div className="flex flex-row items-center p-2 cursor-pointer rounded-[2px] w-[90vw] sm:w-[383px] h-[108px] z-0 border">
                 <div className="h-[85px] w-[85px] overflow-hidden rounded-sm">
                     <img className="h-[100%] w-[100%]" src={image} alt="" />
                 </div>

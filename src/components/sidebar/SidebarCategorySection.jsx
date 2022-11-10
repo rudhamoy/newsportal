@@ -9,7 +9,7 @@ import SideBarItem from './SideBarItem';
 
 function SidebarCategorySection({ category }) {
     return (
-        <div className="bg-white mt-[30px] h-[560px] w-[404px] rounded-[5px] drop-shadow-container">
+        <div className="bg-white mt-[30px] h-[560px] w-[95vw] sm:w-[404px] rounded-[5px] drop-shadow-container">
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">

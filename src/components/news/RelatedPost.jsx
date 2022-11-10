@@ -22,12 +22,12 @@ const FeaturedCard = () => {
 
 const RelatedPost = () => {
     return (
-        <div className="bg-white p-[15px] rounded-md border mt-3">
+        <div className="bg-white p-[15px] rounded-md border">
             <div className='flex items-center gap-x-1 mb-[20px]'>
                 <p className="text-[20px] text-[#bf912d]">RELATED POST</p>
                 <div className='h-[2px] w-[82px] bg-[#bf912d]'></div>
             </div>
-            <div className="sm:grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <FeaturedCard />
                 <FeaturedCard />
                 <FeaturedCard />

@@ -7,7 +7,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 const MultiArticleContainer = ({ image }) => {
     return (
-        <div className='bg-white rounded-md p-4 mt-3'>
+        <div className='bg-white rounded-md p-4 mt-3 w-[100vw] sm:w-[837px]'>
             <h1 className="text-[36px] font-futura2">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
@@ -23,18 +23,18 @@ const MultiArticleContainer = ({ image }) => {
                             <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
                         </div>
                     </div>
-                    <div className="flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
+                    <div className="hidden sm:flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
                         <img src={facebookColoredIcon} alt="" />
-                        <img src={linkedinColoredIcon} alt="" />
-                        <img src={whatsappColoredIcon} alt="" />
-                        <img src={twiterColoredIcon} alt="" />
-                        <AiOutlineMail className="text-[25px]" />
+                        <img height={24} width={24} src={linkedinColoredIcon} alt="" />
+                        <img height={24} width={24} src={whatsappColoredIcon} alt="" />
+                        <img height={24} width={24} src={twiterColoredIcon} alt="" />
+                        <img height={24} width={24} src="email.png" alt="" />
                     </div>
                 </div>
             </div>
             {/* featured img */}
-            <div className="my-3 relative rounded-md overflow-hidden">
-                <img className="" src="Layer1.png" alt="" />
+            <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                <img className="h-[100%] w-[100%]" src="Layer1.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">1 of 5</span>
             </div>
 
@@ -46,8 +46,8 @@ const MultiArticleContainer = ({ image }) => {
                 Are you a Kung Fu Panda fan or is your child one? Or wait have you been searching on some animated and comical web series to watch one? Well if either is the answer you are in the right place.
             </div>
 
-            <div className="my-3 relative rounded-md overflow-hidden">
-                <img className="" src="Layer_18.png" alt="" />
+            <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                <img className="h-[100%] w-[100%]" src="Layer_18.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">2 of 5</span>
             </div>
 
@@ -63,8 +63,8 @@ const MultiArticleContainer = ({ image }) => {
                     <br />
                     <span className="font-bold text-black">Kung Fu Panda Dragon Knight Season 2: have the makers dropped any hints on its making?</span>
 
-                    <div className="my-3 relative rounded-md overflow-hidden">
-                        <img className="" src="Layer19.png" alt="" />
+                    <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                        <img className="h-[100%] w-[100%]" src="Layer19.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">3 of 5</span>
                     </div>
 
@@ -72,14 +72,14 @@ const MultiArticleContainer = ({ image }) => {
                     <p className="mt-8">
                         All the 11 episodes received a satisfactory viewership. To summarize the entire season for you: It is about when the Legendary Po teams up with an English Knight to discover and unfold magical weapons, restore his reputation and also Save the World!
                     </p>
-                    <div className="bg-gray-200 p-2 mt-5">
+                    <div className="bg-[#d6d6d6] p-2 mt-5">
                         <p className="text-[18px] text-[#202020] font-bold">
                             Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack. Training under Master Shifu, Po embarks on an epic high-kicking adventure as he sets out to thwart Tai Lung's evil plans. A DreamWorks animation.
                         </p>
                     </div>
 
-                    <div className="my-3 relative rounded-md overflow-hidden">
-                        <img className="" src="Layer20.png" alt="" />
+                    <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                        <img className="h-[100%] w-[100%]" src="Layer20.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">4 of 5</span>
                     </div>
 
@@ -104,7 +104,7 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
                 {/* tag list */}
                 <div>
-                    <ul className='text-[16px] flex justify-around'>
+                    <ul className='text-[16px] flex justify-around flex-wrap gap-2'>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Kungfu Panda</li>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
                         <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Netflix</li>
@@ -120,11 +120,11 @@ const MultiArticleContainer = ({ image }) => {
                         </div>
                         <div className="flex gap-x-2 my-2">
                             <p className="whitespace-nowrap">Follow us:</p>
-                            <img src="insta.png" alt="" />
-                            <img src="facebook.png" alt="" />
-                            <img src="twitter.png" alt="" />
-                            <img src="youtube.png" alt="" />
-                            <img src="linkedin.png" alt="" />
+                            <img height={24} width={24} src="insta.png" alt="" />
+                            <img height={24} width={24} src="facebook.png" alt="" />
+                            <img height={24} width={24} src="twitter.png" alt="" />
+                            <img height={24} width={24} src="youtube.png" alt="" />
+                            <img height={24} width={24} src="linkedin.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -136,17 +136,21 @@ const MultiArticleContainer = ({ image }) => {
                         <p className="text-[16px] text-[#bf912d]">Manjeet Mahato</p>
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
-                        <div>
+                        <div className="flex items-center gap-x-2">
                             <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
-                            <div>
-                                {/* icons */}
+                            <div className="flex gap-x-2 items-center">
+                                <img src={facebookColoredIcon} alt="" />
+                                <img height={24} width={24} src={linkedinColoredIcon} alt="" />
+                                <img height={24} width={24} src={whatsappColoredIcon} alt="" />
+                                <img height={24} width={24} src={twiterColoredIcon} alt="" />
+                                <img height={24} width={24} src="email.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
-                    <button className="rounded-[5px] w-[297px] bg-[#bf912d] text-white text-[16px] py-[11px]">POST A COMMENT</button>
+                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px]">POST A COMMENT</button>
                 </div>
             </div>
         </div>

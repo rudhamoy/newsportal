@@ -7,23 +7,22 @@ import AuthorCard from './AuthorCard'
 
 const AuthorContainer = () => {
   return (
-    <div className="sm:px-40 mt-10 px-2">
-      <p className="flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> Author</p>
-      <div className="">
+    <div className=" mt-10  flex justify-center items-center">
+      <div className="px-2  w-[1264px]">
+        <p className="flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> Author</p>
         {/* top */}
-        <div className="sm:w-[70%] w-full">
+        <div className="">
           <AuthorCard />
         </div>
-        <div className="sm:w-[70%] w-full my-3 border bg-[#c5c5c5] h-1"></div>
+        <div className="w-[837px] my-3 border bg-[#c5c5c5] h-1"></div>
 
-        <div className="w-[100%] flex gap-x-3">
+        <div className="flex justify-between gap-x-[36px]">
           {/* left */}
-          <div className="sm:w-[70%] w-full">
+          <div className="">
             <BlogList />
           </div>
           {/* right */}
-          <div className="w-[30%] sm:flex hidden flex-col items-center gap-y-3">
-            {/* <div className="w-[30%] grid grid-row-1 gap-y-3"> */}
+          <div className="sm:flex hidden flex-col items-center gap-y-3">
             <Ads />
             <Featured />
             <Ads bg="white" />
@@ -31,10 +30,10 @@ const AuthorContainer = () => {
         </div>
 
         {/* bottom */}
-        <div className="sm:w-[70%] w-full cursor-pointer">
+        <div className="w-full sm:w-[837px] cursor-pointer">
           <div>
-            <div className="p-2 rounded-md border bg-[#bf912d] text-center text-white mt-8 mb-14 text-2xl">
-              <p className="text-yellow-400">MORE STORIES</p>
+            <div className="rounded-[5px] h-[52px] border bg-[#bf912d] text-center mt-8 mb-14 text-[34px] flex justify-center">
+              <p className="text-[#ffd200]">MORE STORIES</p>
             </div>
           </div>
         </div>
