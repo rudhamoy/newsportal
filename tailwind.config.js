@@ -9,6 +9,7 @@ module.exports = {
         futura2: ["FUTURA21"],
         proxima: ["PROXIMALIGHT"],
         nunito: ["NUNITO"],
+        nunitoSans: ["NUNITOSANS"],
         newsbt: ["NEWSBT"]
       },
       dropShadow: {

@@ -28,6 +28,13 @@ code {
     url("./fonts/NUNITO.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "NUNITOSANS";
+  /*Can be any text*/
+  src: local("NUNITOSANS"),
+    url("./fonts/NunitoSans-SemiBold.ttf") format("truetype");
+}
+
 
 
 @font-face {

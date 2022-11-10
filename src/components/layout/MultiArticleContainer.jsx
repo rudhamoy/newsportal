@@ -8,10 +8,10 @@ import { AiOutlineMail } from 'react-icons/ai';
 const MultiArticleContainer = ({ image }) => {
     return (
         <div className='bg-white rounded-md p-4 mt-3 w-[100vw] sm:w-[837px]'>
-            <h1 className="text-[36px] font-futura2">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[36px] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
-            <p className="text-[20px] text-[#6d6d6d] font-proxima">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
+            <p className="text-[20px] text-[#6d6d6d] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
             <div className="w-[100%] my-3 border bg-gray-500 h-[1px]"></div>
             {/* author  */}
             <div>
@@ -19,7 +19,7 @@ const MultiArticleContainer = ({ image }) => {
                     <div className="flex gap-x-2 items-center">
                         <img src="author2.png" alt="" />
                         <div className="text-[13px] text-[#6d6d6d]">
-                            <p className=''>by <span className="text-[16px] text-[#000000] font-proxima font-[600]">Manjeet Mahato</span></p>
+                            <p className=''>by <span className="text-[16px] text-[#000000] font-nunitoSans font-semibold">Manjeet Mahato</span></p>
                             <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const MultiArticleContainer = ({ image }) => {
             </div>
 
             {/* article */}
-            <div className="text-[18px] font-proxima mt-7">
+            <div className="text-[18px] font-sans mt-7">
                 It hasn’t been much time since Kung Fu Panda Dragon Knight was released, and Kung Fu Panda fans are already asking for season 2 as they would never be done with the cute Panda and his fighting styles.
                 <br />
                 <br />
@@ -52,8 +52,8 @@ const MultiArticleContainer = ({ image }) => {
             </div>
 
             <div className="mt-5 ">
-                <h2 className="text-[30px] my-3 font-futura2">Recap from Season 1</h2>
-                <div className="text-[18px] font-proxima">
+                <h2 className="text-[30px] my-3 font-nunitoSans">Recap from Season 1</h2>
+                <div className="text-[18px] font-sans">
                     Developed by Mitch Watson and Peter Hastings, “Kung Fu Panda: Dragon Knight” began to premiere on July 14 this year. All the episodes of the first season were released on the same day i.e on the 14th of July.
                     <br />
                     <br />
@@ -73,7 +73,7 @@ const MultiArticleContainer = ({ image }) => {
                         All the 11 episodes received a satisfactory viewership. To summarize the entire season for you: It is about when the Legendary Po teams up with an English Knight to discover and unfold magical weapons, restore his reputation and also Save the World!
                     </p>
                     <div className="bg-[#d6d6d6] p-2 mt-5">
-                        <p className="text-[18px] text-[#202020] font-bold">
+                        <p className="text-[18px] text-[#202020] font-semibold font-nunitoSans">
                             Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack. Training under Master Shifu, Po embarks on an epic high-kicking adventure as he sets out to thwart Tai Lung's evil plans. A DreamWorks animation.
                         </p>
                     </div>
@@ -99,7 +99,7 @@ const MultiArticleContainer = ({ image }) => {
             <div className="mt-12">
                 {/* tags */}
                 <div className="flex items-center gap-x-1">
-                    <p className="text-[#bf912d] text-[20px] font-futura2">TAGS</p>
+                    <p className="text-[#bf912d] text-[20px] font-nunitoSans">TAGS</p>
                     <div className="w-[84px] h-[2px] bg-[#bf912d]"></div>
                 </div>
                 {/* tag list */}
@@ -133,7 +133,7 @@ const MultiArticleContainer = ({ image }) => {
                 <div className="flex items-center bg-gray-200 p-4 gap-x-2">
                     <img src="Layer17.png" alt="" />
                     <div>
-                        <p className="text-[16px] text-[#bf912d]">Manjeet Mahato</p>
+                        <p className="text-[16px] text-[#bf912d] font-nunitoSans">Manjeet Mahato</p>
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div className="flex items-center gap-x-2">
@@ -150,7 +150,7 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
-                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px]">POST A COMMENT</button>
+                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px] font-nunitoSans">POST A COMMENT</button>
                 </div>
             </div>
         </div>

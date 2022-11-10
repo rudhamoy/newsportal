@@ -13,7 +13,7 @@ function SidebarCategorySection({ category }) {
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">
-                        <p className="Futura2 text-[#bf912d] font-bold">{category}</p>
+                        <p className="font-nunitoSans text-[#bf912d] font-semibold">{category}</p>
                         <div className="h-[2.5px] w-[100px] rounded bg-[#bf912d]"></div>
                     </div>
 
@@ -26,7 +26,7 @@ function SidebarCategorySection({ category }) {
 
                 </div>
                 <div class="flex items-center justify-center mt-[13px]">
-                    <p className="text-[#bf912d] font-semibold text-[16px]">READ ALL</p>
+                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[16px]">READ ALL</p>
                     <FiChevronRight className="text-[#bf912d] text-[18px]" />
                 </div>
             </div>

@@ -36,12 +36,12 @@ const MobileMenu = ({ setShowMenu }) => {
                 <div className="border-t border-gray-400 border-b leading-10 p-2">
                     <h1 className="uppercase">Follow us on</h1>
                     <ul className="flex justify-around">
-                        <img src="ins.png" alt="" />
-                        <img src="fb.png" alt="" />
-                        <img src="twt.png" alt="" />
-                        <img src="yt.png" alt="" />
-                        <img src="lnkd.png" alt="" />
-                        <img src="rss.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="instaMobi.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="facebookMobi.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="twitterMobi.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="youtubeMobi.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="linkedinMobi.png" alt="" />
+                        <img className="h-[24px] w-[24px]" src="rssMobi.png" alt="" />
                     </ul>
                 </div>
             </div>

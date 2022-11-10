@@ -9,12 +9,12 @@ function FeaturedPost() {
                 <img className="h-[100%]" src={panda} alt="" />
                 <div className="absolute z-[10] bottom-2 left-6 flex flex-row justify-start gap-2 items-center drop-shadow-3xl">
                     <AiOutlinePicRight className="text-[#ffd200] font-bold" />
-                    <div className="capitalize text-[12px] text-[#ffd200]  font-bold">TV SERIES</div>
+                    <div className="capitalize text-[12px] text-[#ffd200] drop-shadow-3xl  font-bold">TV SERIES</div>
                 </div>
             </div>
             <div className="pt-[7px] pb-[12px] px-[14px]">
-                <h3 className="text-[25.5px] font-bold leading-8 font-futura2">Kung Fu Panda: The Dragon Knight Season 2 Potential Release Date and More</h3>
-                <p className="text-[16.12px] font-proxima">Kung Fu Panda: THe Dragon Knight Season 2 has already not been announced and here we have its Expected Release Data, Cast and possible Plot info</p>
+                <h3 className="text-[25.5px] font-semibold leading-8 font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 Potential Release Date and More</h3>
+                <p className="text-[16.12px] font-sans">Kung Fu Panda: THe Dragon Knight Season 2 has already not been announced and here we have its Expected Release Data, Cast and possible Plot info</p>
             </div>
         </div>
     )

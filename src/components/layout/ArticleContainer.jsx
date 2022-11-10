@@ -11,7 +11,7 @@ import beardman from '../../assets/images/beard-man.png';
 const ArticleContainer = ({ image }) => {
     return (
         <div className='bg-white rounded-md p-4 mt-[18px] w-[100vw] sm:w-[837px]'>
-            <h1 className="text-[20px] sm:text-[36px] font-futura2 text-[#000000] font-bold">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[20px] sm:text-[36px] font-nunitoSans text-[#000000] font-semibold">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
             <p className="sm:text-[20px] text-[18px] text-[#6d6d6d] font-proxima font-[300]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
@@ -22,7 +22,7 @@ const ArticleContainer = ({ image }) => {
                     <div className="flex gap-x-2 items-center">
                         <img src="author2.png" alt="" />
                         <div className="text-[13px] text-[#6d6d6d]">
-                            <p className=''>by <span className="text-[16px] text-[#000000] font-proxima font-[600]">Manjeet Mahato</span></p>
+                            <p className=''>by <span className="text-[16px] text-[#000000] font-nunitoSans font-semibold">Manjeet Mahato</span></p>
                             <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const ArticleContainer = ({ image }) => {
             </div>
 
             {/* article */}
-            <div className="text-[18px] mt-7 font-proxima">
+            <div className="text-[18px] mt-7 font-sans">
                 It hasn’t been much time since Kung Fu Panda Dragon Knight was released, and Kung Fu Panda fans are already asking for season 2 as they would never be done with the cute Panda and his fighting styles.
                 <br />
                 <br />
@@ -57,7 +57,7 @@ const ArticleContainer = ({ image }) => {
             {/* you may like */}
             <div className="sm:h-[145px] h-[300px] w-[100%] bg-[#bf912d] p-2 px-4 mt-4">
                 <div className="flex items-center gap-x-2">
-                    <p className="text-[#ffc700] text-[20px]">YOU MAY LIKE</p>
+                    <p className="text-[#ffc700] text-[20px] font-nunitoSans">YOU MAY LIKE</p>
                     <div className="h-[2px] w-[84px] bg-[#ffc700]"></div>
                 </div>
                 <div className="flex sm:flex-row flex-col sm:gap-x-4 gap-y-4">
@@ -65,7 +65,7 @@ const ArticleContainer = ({ image }) => {
                         <div className="h-[100px] w-[181px]  overflow-hidden">
                             <img className="h-[100px] w-[181px]" src={girlboobs} alt="" />
                         </div>
-                        <p className="font-futura2 text-[18px] text-white px-2">
+                        <p className="font-nunitoSans text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
                             Instagram hot Pictures
 
@@ -76,7 +76,7 @@ const ArticleContainer = ({ image }) => {
                     <div className="h-[100px] w-[181px]  overflow-hidden">
                             <img className="h-[100px] w-[181px]" src={beardman} alt="" />
                         </div>
-                        <p className="font-futura2 text-[18px] text-white px-2">
+                        <p className="font-nunitoSans text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
                             Instagram hot Pictures
 
@@ -98,7 +98,7 @@ const ArticleContainer = ({ image }) => {
                     <br />
                     <br />
 
-                    <ul className="font-bold">
+                    <ul className="font-semibold font-nunitoSans">
                         <li> 1. A Cause for the Paws</li>
                         <li>2. The Knight’s Code</li>
                         <li>3. The Lotus</li>
@@ -120,16 +120,16 @@ const ArticleContainer = ({ image }) => {
                         Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
                     </p>
 
-                    <h3 className="font-bold font-futura2 my-6">Official Synopsis of Kungfu Panda:</h3>
+                    <h3 className="font-bold font-nunitoSans my-6">Official Synopsis of Kungfu Panda:</h3>
                     <div className="bg-gray-200 p-2">
-                        <p className="text-[18px] text-[#202020] font-bold font-nunito">
+                        <p className="text-[18px] text-[#202020] font-bold font-nunitoSans">
                             <span className="font-newsbt text-[#feae00] text-[74px] leading-[50px] italic">"</span>
                             Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
 
                         </p>
                     </div>
 
-                    <div className="text-[18px] mt-6 text-[#202020] font-proxima">
+                    <div className="text-[18px] mt-6 text-[#202020] font-sans">
                         Streamed not more than a month ago, the fans of “Kung Fu Panda: Dragon Knight” already need a season 2. With its comical and exciting situations, the show was loved by the little ones.
                         <br />
                         <br />
@@ -145,7 +145,7 @@ const ArticleContainer = ({ image }) => {
             <div className="mt-12">
                 {/* tags */}
                 <div className="flex items-center gap-x-1">
-                    <p className="text-[#bf912d] text-[20px] font-futura2">TAGS</p>
+                    <p className="text-[#bf912d] text-[20px] font-nunitoSans">TAGS</p>
                     <div className="w-[84px] h-[2px] bg-[#bf912d]"></div>
                 </div>
                 {/* tag list */}
@@ -179,7 +179,7 @@ const ArticleContainer = ({ image }) => {
                 <div className="flex items-center bg-gray-200 p-4 gap-x-2">
                     <img src="Layer17.png" alt="" />
                     <div>
-                        <p className="text-[16px] text-[#bf912d]">Manjeet Mahato</p>
+                        <p className="text-[16px] text-[#bf912d] font-nunitoSans">Manjeet Mahato</p>
                         <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div className="flex items-center gap-x-2">
@@ -196,7 +196,7 @@ const ArticleContainer = ({ image }) => {
                 </div>
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
-                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px]">POST A COMMENT</button>
+                    <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px] font-nunitoSans">POST A COMMENT</button>
                 </div>
             </div>
         </div>
