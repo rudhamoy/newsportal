@@ -7,6 +7,7 @@ import { FcMenu } from 'react-icons/fc'
 import { BiSearch } from 'react-icons/bi'
 
 import './navigation.css'
+import MobileNav from './MobileNav'
 
 const HeaderNav = ({ setShowMenu }) => {
     const [clicked, setClicked] = useState(false)
@@ -15,32 +16,7 @@ const HeaderNav = ({ setShowMenu }) => {
 
     return (
         <>
-            <div className="sm:hidden bg-white shadow-md p-2">
-                <div className=" w-[100%] flex justify-between items-center">
-                    {/* mobile menu */}
-                    <div className="flex items-center gap-x-3 w-[72%]">
-                        <div role="button" onClick={() => setShowMenu(true)} className="">
-                            <img src="mobileMenu.png" alt="" className="h-[35px]" />
-                        </div>
-                        <img src="realLogo.png" className="h-[30px]" alt="" />
-                    </div>
-                    <div className="flex items-center justify-around border-l w-[28%]">
-                        <img src="mobileShare.png" alt="" className="h-[35px]" />
-                        <img src="mobileSearch.png" alt="" className="h-[35px]" />
-                    </div>
-                </div>
-                <div className="flex items-center gap-x-3 mt-2">
-                    <div role="button">
-                        <img src="home.png" alt="" className="h-[20px] w-[20px]" />
-                    </div>
-                    <div className='uppercase flex items-center gap-x-3 text-[12px] font-futura2'>
-                        <p>Celebrity</p>
-                        <p>Entertainment</p>
-                        <p className="whitespace-nowrap">Tv News</p>
-                        <p className="whitespace-nowrap">Web Stories</p>
-                    </div>
-                </div>
-            </div>
+            <MobileNav setShowMenu={setShowMenu} setClickFollow={setClickFollow} clickFollow={clickFollow} />
             <div className='hidden sm:flex justify-center p-3 bg-white shadow-md '>
                 <div className="w-[1264px] flex justify-between items-center">
                     {/* DESKTOP */}
@@ -110,7 +86,8 @@ const HeaderNav = ({ setShowMenu }) => {
                             <div role="button" onClick={() => setShowMenu(true)} className="">
                                 <img src="menuu.png" alt="" />
                             </div>
-
+                            
+                            {/* follow/share */}
                             <div className="relative">
                                 <div role="button" onClick={() => {
                                     setClickFollow(!clickFollow)
@@ -144,6 +121,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                     </div>
                                 )}
                             </div>
+                            {/* search */}
                             <img src="searchh.png" alt="" />
                         </div>
                     </div>
