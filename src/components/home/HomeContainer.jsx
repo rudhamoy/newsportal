@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CategoryListItem from '../category/CategoryListItem';
 import FeaturedContainer from '../featured_hero/FeaturedContainer';
 import MoreButton from '../utils/MoreButton';
@@ -7,7 +7,14 @@ import HotspotSlider from './HotspotSlider';
 import SidebarCategorySection from '../sidebar/SidebarCategorySection';
 import SideAds from '../ads/SideAds';
 import VisualStoriesSlider from './VisualStoriesSlider';
+import { useInView } from 'react-intersection-observer';
+
 function HomeContainer() {
+
+    const { ref, inView } = useInView()
+
+    console.log("inView = ", inView)
+
     return (
         <div className="sm:mx-0 mx-2 sm:mt-6 flex flex-col justify-center items-center">
             <div className="pb-[27px] sm:pt-[37px] flex flex-col justify-center items-center">
@@ -39,7 +46,7 @@ function HomeContainer() {
                     </div>
                     <SidebarCategorySection category={"MOVIES NEWS"} />
                     <SidebarCategorySection category={"GAMES & SPORTS"} />
-                    <div className="h-[600px]">
+                    <div className={`h-[600px] ${inView === true ? 'sticky top-10' : ''}`} ref={ref}>
                         <SideAds bg={"white"} />
                     </div>
                 </div>

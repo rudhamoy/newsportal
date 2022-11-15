@@ -5,8 +5,14 @@ import SideAds from '../ads/SideAds'
 import ArticleContainer from '../layout/ArticleContainer'
 import Featured from '../sidebar/Featured'
 import RelatedPost from './RelatedPost'
+import { useInView } from 'react-intersection-observer';
 
 const SingleNewsContainer = ({ image }) => {
+
+  const { ref, inView } = useInView()
+  console.log("inView = ", inView)
+
+
   return (
     <div className="my-6 px-2 flex justify-center items-center">
       <div className="w-[100w] sm:w-[1264px]">
@@ -15,13 +21,15 @@ const SingleNewsContainer = ({ image }) => {
         <Advertisement />
 
         <div className=" flex justify-between">
-          {/* left */}
+          {/* content */}
           <div className="">
             <ArticleContainer image={image} />
           </div>
-          {/* right */}
+          {/* sidebar */}
           <div className="hidden sm:flex flex-col items-center gap-y-3">
-            <SideAds />
+            <div className="h-[480px]">
+              <SideAds />
+            </div>
             <Featured />
             <SideAds bg="white" />
           </div>

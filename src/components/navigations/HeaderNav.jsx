@@ -54,10 +54,15 @@ const HeaderNav = ({ setShowMenu }) => {
                         <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase">
                             <div className="cursor-pointer">CELEBRITY</div>
                             <div className="dropdown relative">
-                                <div role="button" onClick={() => {
-                                    setClicked(!clicked)
-                                    setOnClicked(false)
-                                }}>
+                                <div 
+                                role="button"
+                                onMouseEnter={() => {
+                                    setClicked(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setClicked(false)
+                                }}
+                                >
                                     <a className="flex items-center">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {clicked === true && (
@@ -73,9 +78,11 @@ const HeaderNav = ({ setShowMenu }) => {
                                 )}
                             </div>
                             <div className="dropdown relative">
-                                <div role="button" onClick={() => {
-                                    setOnClicked(!onClicked)
-                                    setClicked(false)
+                                <div role="button" onMouseEnter={() => {
+                                    setOnClicked(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setOnClicked(false)
                                 }}>
                                     <a className="flex items-center">News <BiChevronDown className="text-lg" /></a>
                                 </div>

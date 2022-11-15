@@ -22,7 +22,9 @@ const VideoNewsContainer = ({ image }) => {
 
           <div className="sm:flex hidden flex-col items-center gap-y-3">
 
-            <SideAds />
+          <div className="h-[480px]">
+              <SideAds />
+            </div>
             <Featured />
             <SideAds bg="white" />
           </div>

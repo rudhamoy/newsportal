@@ -25,7 +25,7 @@ function SidebarCategorySection({ category }) {
                     <SideBarItem category={"TV SERIES"} title={"Bob Hearts Abishola Season 4 Release Date, Cast, Plot, and What we know so far"} image={huggin} />
 
                 </div>
-                <div class="flex items-center justify-center mt-[13px]">
+                <div className="flex items-center justify-center mt-[13px]">
                     <p className="text-[#bf912d] font-semibold font-nunitoSans text-[16px]">READ ALL</p>
                     <FiChevronRight className="text-[#bf912d] text-[18px]" />
                 </div>

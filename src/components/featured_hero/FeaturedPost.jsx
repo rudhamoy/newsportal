@@ -11,6 +11,7 @@ function FeaturedPost() {
                     <AiOutlinePicRight className="text-[#ffd200] font-bold" />
                     <div className="capitalize text-[12px] text-[#ffd200] drop-shadow-3xl  font-bold">TV SERIES</div>
                 </div>
+                <div className='fadeBottom absolute bottom-0 left-0 right-0' />
             </div>
             <div className="pt-[7px] pb-[12px] px-[14px]">
                 <h3 className="text-[25.5px] font-semibold leading-8 font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 Potential Release Date and More</h3>

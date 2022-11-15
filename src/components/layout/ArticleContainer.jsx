@@ -36,8 +36,9 @@ const ArticleContainer = ({ image }) => {
                 </div>
             </div>
             {/* featured img */}
-            <div className="my-3 w-[95vw] sm:w-[804px] sm:h-[453px]">
+            <div className="my-3 w-[95vw] sm:w-[804px] sm:h-[453px] relative overflow-hidden">
                 <img src={image} alt="" className="w-[100%] h-[100%]" />
+                <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
             </div>
 
             {/* article */}

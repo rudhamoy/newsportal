@@ -10,6 +10,7 @@ function MasonaryItem({ image, category, icon, title }) {
                     <img src={icon} width={15} height={15} className="text-[#ffd200] font-bold drop-shadow-3xl " alt="" />
                     <div className="capitalize text-[12px] text-[#ffd200] drop-shadow-3xl  font-bold">{category}</div>
                 </div>
+                <div className='fadeBottom absolute bottom-0 left-0 right-0' />
             </div>
             <div className="sm:p-[10px] p-[6px]">
                 <h3 className="text-[18px] sm:leading-5 font-semibold  sm:line-clamp-2 line-clamp-2 font-nunitoSans ">{title}</h3>

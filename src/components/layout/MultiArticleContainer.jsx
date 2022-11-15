@@ -36,6 +36,10 @@ const MultiArticleContainer = ({ image }) => {
             <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
                 <img className="h-[100%] w-[100%]" src="Layer1.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">1 of 5</span>
+                <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
+                    <p className="font-nunitoSans text-white text-[14px]">Image Courtesy: @Netflix</p>
+                </div>
+                <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
             </div>
 
             {/* article */}
@@ -49,6 +53,10 @@ const MultiArticleContainer = ({ image }) => {
             <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
                 <img className="h-[100%] w-[100%]" src="Layer_18.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">2 of 5</span>
+                <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
+                    <p className="font-nunitoSans text-white text-[14px]">Image Courtesy: @Netflix</p>
+                </div>
+                <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
             </div>
 
             <div className="mt-5 ">
@@ -66,6 +74,10 @@ const MultiArticleContainer = ({ image }) => {
                     <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
                         <img className="h-[100%] w-[100%]" src="Layer19.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">3 of 5</span>
+                        <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
+                            <p className="font-nunitoSans text-white text-[14px]">Image Courtesy: @Netflix</p>
+                        </div>
+                        <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
                     <h3 className="text-[25px] font-bold">Official Synopsis of Kungfu Panda:</h3>
@@ -81,6 +93,10 @@ const MultiArticleContainer = ({ image }) => {
                     <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
                         <img className="h-[100%] w-[100%]" src="Layer20.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">4 of 5</span>
+                        <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
+                            <p className="font-nunitoSans text-white text-[14px]">Image Courtesy: @Netflix</p>
+                        </div>
+                        <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
                     <div className="text-[18px] text-[#202020]">

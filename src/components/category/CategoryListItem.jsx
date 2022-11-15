@@ -15,7 +15,7 @@ function CategoryListItem({ width }) {
                             <img src={videoIcon} width={15} height={15} className="text-[#ffd200] font-bold" alt="" />
                             <div className="capitalize text-[8px] text-[#ffd200] font-futura2  font-bold">NOVEMBER 2, 2022</div>
                         </div>
-
+                        <div className='fadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
                     <div className="relative">
                         <p className="text-[10px] font-bold font-futura2 text-[#bf912d]">TV SERIES</p>
