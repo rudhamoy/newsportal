@@ -7,8 +7,8 @@ function HotSpotSliderItem({ category, title, image }) {
                 <img className="h-[100%] w-[100%]" src={image} alt="" />
             </div>
             <div className="px-2 relative h-[80px] w-[300px]">
-                <p className="font-futura2 text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
-                <p className="font-nunitoSans text-[14px] leading-5 text-black font-semibold">
+                <p className="font-nunitoSans mb-[5px] text-[#bf912d] font-bold text-[10px] capitalize">{category}</p>
+                <p className="font-nunitoSans text-[16px] leading-[18px] text-black font-semibold">
                     {title}
                 </p>
             </div>

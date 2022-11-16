@@ -13,7 +13,7 @@ function SidebarCategorySection({ category }) {
             <div className="p-2">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2">
-                        <p className="font-nunitoSans text-[#bf912d] font-semibold">{category}</p>
+                        <h1 className="font-nunitoSans text-[#bf912d] font-semibold">{category}</h1>
                         <div className="h-[2.5px] w-[100px] rounded bg-[#bf912d]"></div>
                     </div>
 

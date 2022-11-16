@@ -4,10 +4,10 @@ import { BsSearch } from 'react-icons/bs'
 
 const MobileMenu = ({ setShowMenu }) => {
     return (
-        <div className='absolute left-0 z-50 w-[100%] h-[100%] bg-white'>
+        <div className='fixed left-0 z-50 w-[100%] sm:w-[30%] h-[100vh] bg-white'>
             <div className="flex justify-between items-center border-b p-2">
                 <img src="logobg.png" alt="" className="h-[40px]" />
-                <AiOutlineCloseCircle onClick={() => setShowMenu(false)} className='text-[#bf912d] text-right text-3xl' />
+                <AiOutlineCloseCircle onClick={() => setShowMenu(false)} className='text-[#bf912d] text-right text-3xl cursor-pointer' />
             </div>
             <div className="p-2">
                 <div className="w-[100%] bg-gray-200 rounded-md flex gap-x-1 border h-[45px] items-center p-1">

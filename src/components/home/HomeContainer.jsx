@@ -17,7 +17,7 @@ function HomeContainer() {
 
     return (
         <div className="sm:mx-0 mx-2 sm:mt-6 flex flex-col justify-center items-center">
-            <div className="pb-[27px] sm:pt-[37px] flex flex-col justify-center items-center">
+            <div className="pb-[27px] flex flex-col justify-center items-center">
                 <FeaturedContainer />
                 <HotspotSlider />
             </div>

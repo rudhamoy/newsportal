@@ -14,8 +14,8 @@ function FeaturedPost() {
                 <div className='fadeBottom absolute bottom-0 left-0 right-0' />
             </div>
             <div className="pt-[7px] pb-[12px] px-[14px]">
-                <h3 className="text-[25.5px] font-semibold leading-8 font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 Potential Release Date and More</h3>
-                <p className="text-[16.12px] font-sans">Kung Fu Panda: THe Dragon Knight Season 2 has already not been announced and here we have its Expected Release Data, Cast and possible Plot info</p>
+                <h2 className="text-[26px] font-semibold leading-8 font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 Potential Release Date and More</h2>
+                <p className="text-[16px] font-sans text-[#6d6d6d]">Kung Fu Panda: THe Dragon Knight Season 2 has already not been announced and here we have its Expected Release Data, Cast and possible Plot info</p>
             </div>
         </div>
     )

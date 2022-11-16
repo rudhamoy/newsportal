@@ -6,9 +6,11 @@ import twiterColoredIcon from '../../assets/icons/twiter-colored-icon.svg';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const MultiArticleContainer = ({ image }) => {
+    const tagListClass = "bg-[#f4f4f4] cursor-pointer rounded-md p-[1px] px-3 hover:border-[1px] hover:border-[#e4e4e4] transition ease-in-out delay-300"
+
     return (
         <div className='bg-white rounded-md p-4 mt-3 w-[100vw] sm:w-[837px]'>
-            <h1 className="text-[36px] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[30px] sm:text-[36px] leading-[35px] sm:leading-[42px] font-semibold font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
             <p className="text-[20px] text-[#6d6d6d] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
@@ -20,7 +22,7 @@ const MultiArticleContainer = ({ image }) => {
                         <img src="author2.png" alt="" />
                         <div className="text-[13px] text-[#6d6d6d]">
                             <p className=''>by <span className="text-[16px] text-[#000000] font-nunitoSans font-semibold">Manjeet Mahato</span></p>
-                            <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
+                            <p className="font-nunitoSans">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
                         </div>
                     </div>
                     <div className="hidden sm:flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
@@ -33,7 +35,7 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
             </div>
             {/* featured img */}
-            <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+            <div className="my-3 sm:h-[453px] w-[90vw] sm:w-[804px] relative rounded-md overflow-hidden">
                 <img className="h-[100%] w-[100%]" src="Layer1.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">1 of 5</span>
                 <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
@@ -50,7 +52,7 @@ const MultiArticleContainer = ({ image }) => {
                 Are you a Kung Fu Panda fan or is your child one? Or wait have you been searching on some animated and comical web series to watch one? Well if either is the answer you are in the right place.
             </div>
 
-            <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+            <div className="my-3 sm:h-[453px] w-[90vw] sm:w-[804px] relative rounded-md overflow-hidden">
                 <img className="h-[100%] w-[100%]" src="Layer_18.png" alt="" />
                 <span className="bg-black text-white px-7 absolute top-0 left-0">2 of 5</span>
                 <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
@@ -71,7 +73,7 @@ const MultiArticleContainer = ({ image }) => {
                     <br />
                     <span className="font-bold text-black">Kung Fu Panda Dragon Knight Season 2: have the makers dropped any hints on its making?</span>
 
-                    <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                    <div className="my-3 sm:h-[453px] w-[90vw] sm:w-[804px] relative rounded-md overflow-hidden">
                         <img className="h-[100%] w-[100%]" src="Layer19.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">3 of 5</span>
                         <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
@@ -80,17 +82,19 @@ const MultiArticleContainer = ({ image }) => {
                         <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
-                    <h3 className="text-[25px] font-bold">Official Synopsis of Kungfu Panda:</h3>
-                    <p className="mt-8">
+                    <h3 className="text-[25px] font-bold font-nunitoSans">Official Synopsis of Kungfu Panda:</h3>
+                    <p className="mt-8 font-sans">
                         All the 11 episodes received a satisfactory viewership. To summarize the entire season for you: It is about when the Legendary Po teams up with an English Knight to discover and unfold magical weapons, restore his reputation and also Save the World!
                     </p>
-                    <div className="bg-[#d6d6d6] p-2 mt-5">
-                        <p className="text-[18px] text-[#202020] font-semibold font-nunitoSans">
-                            Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack. Training under Master Shifu, Po embarks on an epic high-kicking adventure as he sets out to thwart Tai Lung's evil plans. A DreamWorks animation.
+                    <div className="bg-[#f5f5f5] p-2 my-5">
+                        <p className="text-[18px] text-[#202020] font-bold font-nunitoSans">
+                            <span className="font-nunitoSans text-[#feae00] italic text-[30px]">"</span>
+                            Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
+                            <span className="font-nunitoSans text-[#feae00] italic text-[30px]">"</span>
                         </p>
                     </div>
 
-                    <div className="my-3 sm:h-[453px] w-[95vw] sm:w-[804px] relative rounded-md overflow-hidden">
+                    <div className="my-3 sm:h-[453px] w-[90vw] sm:w-[804px] relative rounded-md overflow-hidden">
                         <img className="h-[100%] w-[100%]" src="Layer20.png" alt="" />
                         <span className="bg-black text-white px-7 absolute top-0 left-0">4 of 5</span>
                         <div className="absolute z-[10] bottom-2 sm:left-3 left-2 flex flex-row justify-start gap-2 items-center ">
@@ -99,7 +103,7 @@ const MultiArticleContainer = ({ image }) => {
                         <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
-                    <div className="text-[18px] text-[#202020]">
+                    <div className="text-[18px] text-[#202020] font-sans">
                         Streamed not more than a month ago, the fans of “Kung Fu Panda: Dragon Knight” already need a season 2. With its comical and exciting situations, the show was loved by the little ones.
                         <br />
                         <br />
@@ -120,10 +124,10 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
                 {/* tag list */}
                 <div>
-                    <ul className='text-[16px] flex justify-around flex-wrap gap-2'>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Kungfu Panda</li>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Netflix</li>
+                    <ul className='text-[16px] flex flex-wrap gap-2 p-3'>
+                        <li className={tagListClass}>Kungfu Panda</li>
+                        <li className={tagListClass}>Kung Fu Panda: Dragon Knight Season 2</li>
+                        <li className={tagListClass}>Netflix</li>
                     </ul>
                 </div>
 
@@ -146,20 +150,22 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
 
                 {/* author */}
-                <div className="flex items-center bg-gray-200 p-4 gap-x-2">
-                    <img src="Layer17.png" alt="" />
+                <div className="flex items-center bg-[#f4f4f4] rounded-[4px] p-4 gap-x-2">
+                    <div className="p-[2px] border-2 border-black rounded-full">
+                        <img className="rounded-full" src="Layer_17.png" alt="" />
+                    </div>
                     <div>
-                        <p className="text-[16px] text-[#bf912d] font-nunitoSans">Manjeet Mahato</p>
-                        <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
+                        <p className="text-[16px] text-[#bf912d] font-nunitoSans mb-[5px]">Manjeet Mahato</p>
+                        <p className="text-[14px] text-[#4b4b4b] font-nunitoSans">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div className="flex items-center gap-x-2">
-                            <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
-                            <div className="flex gap-x-2 items-center">
-                                <img src={facebookColoredIcon} alt="" />
-                                <img height={24} width={24} src={linkedinColoredIcon} alt="" />
-                                <img height={24} width={24} src={whatsappColoredIcon} alt="" />
-                                <img height={24} width={24} src={twiterColoredIcon} alt="" />
-                                <img height={24} width={24} src="email.png" alt="" />
+                            <p className="text-[#bf912d] text-[12px] font-nunitoSans">Reach me at :</p>
+                            <div className="flex gap-x-2 items-center cursor-pointer">
+                                <img height={10} width={10} src={facebookColoredIcon} alt="" />
+                                <img height={16} width={16} src={linkedinColoredIcon} alt="" />
+                                <img height={16} width={16} src={whatsappColoredIcon} alt="" />
+                                <img height={16} width={16} src={twiterColoredIcon} alt="" />
+                                <img height={16} width={16} src="email.png" alt="" />
                             </div>
                         </div>
                     </div>

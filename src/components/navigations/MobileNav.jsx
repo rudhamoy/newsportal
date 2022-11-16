@@ -11,7 +11,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                 {/* mobile menu */}
                 <div className="flex items-center gap-x-3 w-[72%]">
                     <div role="button" onClick={() => setShowMenu(true)} className="">
-                        <img src="mobileMenu.png" alt="" className="h-[35px]" />
+                        <img src="mobileMenu.png" alt="" className="h-[25px]" />
                     </div>
                     <img src="realLogo.png" className="h-[30px]" alt="" />
                 </div>
@@ -24,7 +24,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
 
                         }} className="flex items-center gap-x-1">
                             {/* icon and image */}
-                            {clickFollow !== true ? <img src="mobileShare.png" alt="" className="h-[35px]" /> : <MdClose className="text-[#bf912d] text-3xl" />}
+                            {clickFollow !== true ? <img src="mobileShare.png" alt="" className="h-[25px]" /> : <MdClose className="text-[#bf912d] text-3xl" />}
 
                             {/* <p className="text-[16px] font-futura2">Follow</p> */}
                         </div>
@@ -61,7 +61,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                             setShowSearch(!showSearch)
                         }}
                     >
-                        <img src="mobileSearch.png" alt="" className="h-[35px]" />
+                        <img src="mobileSearch.png" alt="" className="h-[25px]" />
                     </div>
 
                 </div>

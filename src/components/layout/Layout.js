@@ -8,7 +8,9 @@ const Layout = ({ children }) => {
     return (
         <div className="bg-gray-200 relative">
             {showMenu === true && (
-                <MobileMenu setShowMenu={setShowMenu} />
+                <div className="absolute left-0 right-0 bottom-0 top-0 z-40 bg_transparent">
+                    <MobileMenu setShowMenu={setShowMenu} />
+                </div>
             )}
             <HeaderNav setShowMenu={setShowMenu} />
             {children}

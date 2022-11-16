@@ -19,31 +19,31 @@ const Footer = () => {
                             </div>
                             <div>
                                 <ul className="text-[18px] font-nunitoSans flex sm:justify-between gap-x-2 flex-wrap">
-                                    <li className="cursor-pointer">Entertainment</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Entertainment</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Celebrity News</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Celebrity News</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">TV News</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">TV News</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Technology News</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Technology News</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Movies</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Movies</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Politics</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Politics</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Sports</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Sports</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">General News </li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">General News </li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Trending</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Trending</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Bollywood</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Bollywood</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Web Stories</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Web Stories</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Business</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Business</li>
                                     <li>|</li>
-                                    <li className="cursor-pointer">Photos</li>
+                                    <li className="cursor-pointer hover:text-[#bf912d]">Photos</li>
                                 </ul>
                             </div>
                         </div>
@@ -74,17 +74,17 @@ const Footer = () => {
                             <div className="bg-[#bf912d] h-[2px] w-[50px]"></div>
                         </div>
                         <ul className="text-[18px] mt-[16px] font-nunitoSans leading-[30px]">
-                            <li className="cursor-pointer">About Us</li>
-                            <li className="cursor-pointer">Contact Us</li>
-                            <li className="cursor-pointer">DMCA Policy</li>
-                            <li className="cursor-pointer">Editorial Policy</li>
-                            <li className="cursor-pointer">Fact-Checking Policy</li>
-                            <li className="cursor-pointer">Ownership, Funding, and Advertising Policy</li>
-                            <li className="cursor-pointer">Privacy Policy</li>
-                            <li className="cursor-pointer">RSS Feeds</li>
-                            <li className="cursor-pointer">Team</li>
-                            <li className="cursor-pointer">Terms and Condition</li>
-                            <li className="cursor-pointer">Write for Us</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">About Us</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Contact Us</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">DMCA Policy</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Editorial Policy</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Fact-Checking Policy</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Ownership, Funding, and Advertising Policy</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Privacy Policy</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">RSS Feeds</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Team</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Terms and Condition</li>
+                            <li className="cursor-pointer hover:text-[#bf912d]">Write for Us</li>
                         </ul>
                     </div>
                 </div>

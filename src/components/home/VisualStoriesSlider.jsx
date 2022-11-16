@@ -48,22 +48,22 @@ const data = [
 ]
 
 
-function  VisualStoriesSlider () {
-const [currentIndex, setCurrentIndex] = useState(0)
+function VisualStoriesSlider() {
+    const [currentIndex, setCurrentIndex] = useState(0)
 
 
     const nextSlide = () => {
-        if(currentIndex <= data.length - 5) {
-            setCurrentIndex(currentIndex + 2)
+        if (currentIndex <= data.length - 5) {
+            setCurrentIndex(currentIndex + 1)
         }
-       
+
         console.log(currentIndex)
     }
 
     const prevSlide = () => {
-        if(currentIndex !== 0) {
-            setCurrentIndex(currentIndex - 2)
-        } 
+        if (currentIndex !== 0) {
+            setCurrentIndex(currentIndex - 1)
+        }
         console.log(currentIndex)
     }
     console.log(currentIndex)
@@ -90,10 +90,10 @@ const [currentIndex, setCurrentIndex] = useState(0)
 
             <div className="flex justify-between rounded-tl-lg rounded">
                 <div className="flex items-center gap-x-2">
-                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[18px]">VISUAL STORIES</p>
-                    <div className="h-[2px] w-[100px] rounded bg-[#bf912d]"></div>
+                    <p className="text-[#bf912d] font-semibold font-nunitoSans text-[16px] sm:text-[22px]">VISUAL STORIES</p>
+                    <div className="h-[2px] w-[80px] sm:w-[100px] rounded bg-[#bf912d]"></div>
                 </div>
-                <div className="text-[#bf912d] font-semibold font-nunitoSans flex items-center">
+                <div className="text-[#bf912d] text-[12px] sm:text-[18px] font-semibold font-nunitoSans flex items-center cursor-pointer">
                     <p>VIEW ALL</p>
                     <FiChevronRight className="text-[18px]" />
                 </div>
@@ -107,16 +107,16 @@ const [currentIndex, setCurrentIndex] = useState(0)
             </div>
 
             <div className="w-[95vw] sm:w-[811px] h-[321px] mt-[13px] border-[1px] rounded-[6px] overflow-hidden scroll-smooth overflow-x-scroll  scrollbar-hide">
-                <div className="flex">
-                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded">
-                        {data.map((item, index) =>{
+                <div className="flex w-[90vw]  overflowHidden">
+                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded ">
+                        {data.map((item, index) => {
                             return (
                                 <VisualStoriesItem
-                                styles={{transform: `translate(-${currentIndex * 100}%)`}}
-                                key={index}
-                                 index={index} 
-                                 image={item.img} 
-                                 title={item.title} />
+                                    styles={{ transform: `translate(-${currentIndex * 100}%)` }}
+                                    key={index}
+                                    index={index}
+                                    image={item.img}
+                                    title={item.title} />
                             )
                         })}
                         {/* <VisualStoriesItem image={julia} title={"Julia Garnet looks stunning in the dress by Prada"} />
@@ -136,6 +136,6 @@ const [currentIndex, setCurrentIndex] = useState(0)
         </div>
     )
 }
-    
+
 
 export default VisualStoriesSlider

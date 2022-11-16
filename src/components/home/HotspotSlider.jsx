@@ -36,7 +36,7 @@ function HotspotSlider() {
         <div className="w-[95vw] sm:w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] relative drop-shadow-container">
             <div className="flex justify-between rounded-tl-lg">
                 <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
-                    <p className="text-[#ffffff] text-[20px] z-[1] px-[10px]">HOT SPOT</p>
+                    <p className="text-[#ffffff] text-[20px] z-[1] px-[10px] font-nunitoSans">HOT SPOT</p>
                     <div className="h-[100px] w-[200px] bg-[#bf912d] absolute  left-[-50px] skew-x-[-20deg]"></div>
                 </div >
                 <div className="sm:flex hidden gap-x-1 items-center">

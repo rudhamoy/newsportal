@@ -7,11 +7,15 @@ import emailColoredIcon from '../../assets/icons/email-colored-icon.svg';
 import { AiOutlineMail } from 'react-icons/ai';
 import girlboobs from '../../assets/images/girlboobs.png'
 import beardman from '../../assets/images/beard-man.png';
+import EmbedYoutube from './EmbedYoutube';
 
 const ArticleContainer = ({ image }) => {
+
+    const tagListClass = "bg-[#f4f4f4] cursor-pointer rounded-md p-[1px] px-3 hover:border-[1px] hover:border-[#e4e4e4] transition ease-in-out delay-300"
+
     return (
         <div className='bg-white rounded-md p-4 mt-[18px] w-[100vw] sm:w-[837px]'>
-            <h1 className="text-[20px] sm:text-[36px] font-nunitoSans text-[#000000] font-semibold">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[30px] sm:text-[36px] font-nunitoSans text-[#000000] font-semibold">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
             <p className="sm:text-[20px] text-[18px] text-[#6d6d6d] font-proxima font-[300]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
@@ -36,10 +40,13 @@ const ArticleContainer = ({ image }) => {
                 </div>
             </div>
             {/* featured img */}
-            <div className="my-3 w-[95vw] sm:w-[804px] sm:h-[453px] relative overflow-hidden">
+            {image ? (<div className="my-3 w-[90vw] sm:w-[804px] sm:h-[453px] rounded-[5px] relative overflow-hidden overflowHidden">
                 <img src={image} alt="" className="w-[100%] h-[100%]" />
                 <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
-            </div>
+            </div>) : (
+                <div className="my-3 w-[90vw] sm:w-[804px] sm:h-[453px] rounded-[5px] relative overflow-hidden overflowHidden">
+                    <EmbedYoutube embedId="es4x5R-rV9s" />
+                </div>)}
 
             {/* article */}
             <div className="text-[18px] mt-7 font-sans">
@@ -63,8 +70,8 @@ const ArticleContainer = ({ image }) => {
                 </div>
                 <div className="flex sm:flex-row flex-col sm:gap-x-4 gap-y-4">
                     <div className="flex flex-row items-center cursor-pointer">
-                        <div className="h-[100px] w-[181px]  overflow-hidden">
-                            <img className="h-[100px] w-[181px]" src={girlboobs} alt="" />
+                        <div className="h-[100px] w-[181px] rounded-[5px] border border-[#bf912d]  overflowHidden">
+                            <img className="h-[100%] w-[100%]" src={girlboobs} alt="" />
                         </div>
                         <p className="font-nunitoSans text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
@@ -74,8 +81,8 @@ const ArticleContainer = ({ image }) => {
                     </div>
                     <div className=" sm:w-1 sm:h-[100px] w-full h-[2px] bg-white"></div>
                     <div className="flex flex-row items-center cursor-pointer">
-                    <div className="h-[100px] w-[181px]  overflow-hidden">
-                            <img className="h-[100px] w-[181px]" src={beardman} alt="" />
+                        <div className="h-[100px] w-[181px] rounded-[5px] border border-[#bf912d]  overflowHidden">
+                            <img className="h-[100%] w-[100%]" src={beardman} alt="" />
                         </div>
                         <p className="font-nunitoSans text-[18px] text-white px-2">
                             Shama Sikander flaunts in new
@@ -87,8 +94,8 @@ const ArticleContainer = ({ image }) => {
             </div>
 
             <div className="mt-5">
-                <h2 className="text-[30px] my-3 font-futura2 font-bold">Recap from Season 1</h2>
-                <div className="text-[18px] font-proxima">
+                <h2 className="text-[30px] my-3 font-nunitoSans font-bold">Recap from Season 1</h2>
+                <div className="text-[18px] font-sans">
                     Developed by Mitch Watson and Peter Hastings, “Kung Fu Panda: Dragon Knight” began to premiere on July 14 this year. All the episodes of the first season were released on the same day i.e on the 14th of July.
                     <br />
                     <br />
@@ -113,8 +120,9 @@ const ArticleContainer = ({ image }) => {
                         <li>11. The Knight’s Fall Part 2</li>
                     </ul>
 
-                    <div className="my-6 w-[95vw] sm:w-[804px] sm:h-[453px]">
+                    <div className="my-6 w-[90vw] sm:w-[804px] sm:h-[453px] relative rounded-[5px] overflowHidden">
                         <img src="Layer15.png" alt="" className="w-[100%] h-[100%]" />
+                        <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
                     <p className='text-[18px]'>
@@ -122,11 +130,11 @@ const ArticleContainer = ({ image }) => {
                     </p>
 
                     <h3 className="font-bold font-nunitoSans my-6">Official Synopsis of Kungfu Panda:</h3>
-                    <div className="bg-gray-200 p-2">
+                    <div className="bg-[#f5f5f5] p-2">
                         <p className="text-[18px] text-[#202020] font-bold font-nunitoSans">
-                            <span className="font-newsbt text-[#feae00] text-[74px] leading-[50px] italic">"</span>
+                            <span className="font-nunitoSans text-[#feae00] italic text-[30px]">"</span>
                             Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
-
+                            <span className="font-nunitoSans text-[#feae00] italic text-[30px]">"</span>
                         </p>
                     </div>
 
@@ -151,10 +159,10 @@ const ArticleContainer = ({ image }) => {
                 </div>
                 {/* tag list */}
                 <div>
-                    <ul className='text-[16px] flex justify-between sm:justify-around flex-wrap gap-2'>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Kungfu Panda</li>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3 border-2">Kung Fu Panda: Dragon Knight Season 2</li>
-                        <li className="bg-[#f4f4f4] rounded-md p-[1px] px-3">Netflix</li>
+                    <ul className='text-[16px] flex flex-wrap gap-2 p-3'>
+                        <li className={tagListClass}>Kungfu Panda</li>
+                        <li className={tagListClass}>Kung Fu Panda: Dragon Knight Season 2</li>
+                        <li className={tagListClass}>Netflix</li>
                     </ul>
                 </div>
 
@@ -177,20 +185,22 @@ const ArticleContainer = ({ image }) => {
                 </div>
 
                 {/* author */}
-                <div className="flex items-center bg-gray-200 p-4 gap-x-2">
-                    <img src="Layer17.png" alt="" />
+                <div className="flex items-center bg-[#f4f4f4] rounded-[4px] p-4 gap-x-2">
+                    <div className="p-[2px] border-2 border-black rounded-full">
+                        <img className="rounded-full" src="Layer_17.png" alt="" />
+                    </div>
                     <div>
-                        <p className="text-[16px] text-[#bf912d] font-nunitoSans">Manjeet Mahato</p>
-                        <p className="text-[14px] text-[#4b4b4b]">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
+                        <p className="text-[16px] text-[#bf912d] font-nunitoSans mb-[5px]">Manjeet Mahato</p>
+                        <p className="text-[14px] text-[#4b4b4b] font-nunitoSans">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
 
                         <div className="flex items-center gap-x-2">
-                            <p className="text-[#bf912d] text-[12px]">Reach me at :</p>
-                            <div className="flex gap-x-2 items-center">
-                                <img src={facebookColoredIcon} alt="" />
-                                <img height={24} width={24} src={linkedinColoredIcon} alt="" />
-                                <img height={24} width={24} src={whatsappColoredIcon} alt="" />
-                                <img height={24} width={24} src={twiterColoredIcon} alt="" />
-                                <img height={24} width={24} src="email.png" alt="" />
+                            <p className="text-[#bf912d] text-[12px] font-nunitoSans">Reach me at :</p>
+                            <div className="flex gap-x-2 items-center cursor-pointer">
+                                <img height={10} width={10} src={facebookColoredIcon} alt="" />
+                                <img height={16} width={16} src={linkedinColoredIcon} alt="" />
+                                <img height={16} width={16} src={whatsappColoredIcon} alt="" />
+                                <img height={16} width={16} src={twiterColoredIcon} alt="" />
+                                <img height={16} width={16} src="email.png" alt="" />
                             </div>
                         </div>
                     </div>

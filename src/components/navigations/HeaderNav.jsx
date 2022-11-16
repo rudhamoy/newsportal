@@ -19,8 +19,8 @@ const HeaderNav = ({ setShowMenu }) => {
     return (
         <>
             <MobileNav setShowMenu={setShowMenu} setClickFollow={setClickFollow} clickFollow={clickFollow} />
-            <div className='hidden sm:flex justify-center p-3 bg-white shadow-md relative'>
-                <div className="w-[1264px] flex justify-between items-center">
+            <div className='hidden sm:flex justify-center h-[48px] bg-white shadow-md relative'>
+                <div className="w-[1264px] flex justify-between items-center h-[100%]">
                     {/* DESKTOP */}
 
                     {/* left */}
@@ -28,24 +28,36 @@ const HeaderNav = ({ setShowMenu }) => {
                         <img src="logobg.png" alt="" />
                     </div>
                     {/* middle */}
-                    <div className="w-[65%]">
-                        <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase">
+                    <div className="w-[65%] h-[100%]">
+                        <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase h-[100%]">
                             <div className="cursor-pointer">CELEBRITY</div>
-                            <div className="dropdown relative">
+
+                            <div
+                                className="dropdown relative h-[100%]"
+                            >
                                 <div
                                     role="button"
                                     onMouseEnter={() => {
                                         setClicked(true)
                                     }}
-                                    onMouseLeave={() => {
-                                        setClicked(false)
-                                    }}
+                                 onMouseLeave={() => {
+                                     setClicked(false)
+                                 }}
+                                className=" flex justify-center items-center h-[100%]"
                                 >
                                     <a className="flex items-center">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {clicked === true && (
-                                    <div className="menu z-40">
-                                        <ul className="absolute uppercase top-10 z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
+                                    <div
+                                        className="menu z-40"
+                                        onMouseEnter={() => {
+                                            setClicked(true)
+                                        }}
+                                        onMouseLeave={() => {
+                                            setClicked(false)
+                                        }}
+                                    >
+                                        <ul className="absolute uppercase  z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
                                             <li><a href="#">Politics</a></li>
                                             <li><a href="#">Technology</a></li>
                                             <li><a href="#">Gaming</a></li>
@@ -55,18 +67,30 @@ const HeaderNav = ({ setShowMenu }) => {
                                     </div>
                                 )}
                             </div>
-                            <div className="dropdown relative">
-                                <div role="button" onMouseEnter={() => {
-                                    setOnClicked(true)
-                                }}
+                            <div className="dropdown relative h-[100%]">
+                                <div
+                                    role="button"
+                                    onMouseEnter={() => {
+                                        setOnClicked(true)
+                                    }}
                                     onMouseLeave={() => {
                                         setOnClicked(false)
-                                    }}>
+                                    }}
+                                    className="flex justify-center items-center h-[100%]"
+                                    >
                                     <a className="flex items-center">News <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {onClicked === true && (
-                                    <div className="menu z-40">
-                                        <ul className="absolute uppercase top-10 z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
+                                    <div 
+                                    className="menu z-40"
+                                    onMouseEnter={() => {
+                                        setOnClicked(true)
+                                    }}
+                                    onMouseLeave={() => {
+                                        setOnClicked(false)
+                                    }}
+                                    >
+                                        <ul className="absolute uppercase z-50 -right-6 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
                                             <li><a href="#">Politics</a></li>
                                             <li><a href="#">Technology</a></li>
                                             <li><a href="#">Gaming</a></li>
@@ -96,7 +120,7 @@ const HeaderNav = ({ setShowMenu }) => {
 
                                 }} className="flex items-center gap-x-1">
                                     <img src="share.png" alt="" />
-                                    <p className="text-[16px] font-futura2">Follow</p>
+                                    <p className="text-[16px] font-nunitoSans">Follow</p>
                                 </div>
                                 {clickFollow === true && (
                                     <div className="menu z-40">

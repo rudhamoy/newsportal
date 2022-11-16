@@ -31,10 +31,29 @@ code {
   )
 }
 
+.overflowHidden {
+  overflow: hidden !important;
+}
+
 .bg_transparent {
   background: rgba(23, 22, 22, 0.689)
 }
 
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 
 @tailwind base;
