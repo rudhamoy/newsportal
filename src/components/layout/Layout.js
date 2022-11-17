@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     return (
         <div className="bg-gray-200 relative">
             {showMenu === true && (
-                <div className="absolute left-0 right-0 bottom-0 top-0 z-40 bg_transparent">
+                <div onClick={() => setShowMenu(false)} className="absolute left-0 right-0 bottom-0 top-0 z-40 bg_transparent transition ease-in-out delay-200 duration-300">
                     <MobileMenu setShowMenu={setShowMenu} />
                 </div>
             )}

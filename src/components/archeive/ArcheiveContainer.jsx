@@ -28,7 +28,7 @@ function ArcheiveContainer() {
         </div>
 
         <div className="mt-[13px]" >
-          <div className="flex flex-col sm:flex-row justify-between sm:justify-center w-[95vw] sm:w-[1264px]">
+          <div className="flex flex-col sm:flex-row justify-between  w-[95vw] sm:w-[1264px]">
             <div className="">
               <CategoryListItem />
               <CategoryListItem />

@@ -107,8 +107,8 @@ function VisualStoriesSlider() {
             </div>
 
             <div className="w-[95vw] sm:w-[811px] h-[321px] mt-[13px] border-[1px] rounded-[6px] overflow-hidden scroll-smooth overflow-x-scroll  scrollbar-hide">
-                <div className="flex w-[90vw]  overflowHidden">
-                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded ">
+                <div className="flex w-[90vw]  overflowHidden scroll-smooth">
+                    <div className="h-[300px] bg-white my-2 p-[6px] flex gap-x-[12px] rounded">
                         {data.map((item, index) => {
                             return (
                                 <VisualStoriesItem

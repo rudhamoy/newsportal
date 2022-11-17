@@ -9,9 +9,56 @@ import { FiChevronRight } from 'react-icons/fi';
 import HotSpotSliderItem from './HotSpotSliderItem';
 
 
+const data = [
+    {
+        category: "CELEBRITY",
+        img: girlboobs,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "CELEBRITY",
+        img: kdrama,
+        title: "Chris Rock Responds to Will Smith’s apology video"
+    },
+    {
+        category: "CELEBRITY",
+        img: girlboobs,
+        title: "Shama Sikandar Flaunts in New Instagram Hot Pictures"
+    },
+    {
+        category: "CELEBRITY",
+        img: girlboobs,
+        title: "Shama Sikandar Flaunts in New Instagram Hot Pictures"
+    },
+    {
+        category: "CELEBRITY",
+        img: kdrama,
+        title: "Chris Rock Responds to Will Smith’s apology video"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+]
+
 
 function HotspotSlider() {
 
+    const [currentPosition, setCurrentPosition] = useState(0)
+    const dataLength = data.length
+    const showIndicator = Math.round(dataLength / 3)
+    console.log(showIndicator)
 
     const carousalContainer = document.getElementsByClassName('carousal-container');
 
@@ -20,7 +67,7 @@ function HotspotSlider() {
         e.preventDefault();
 
         let width = carousalContainer[0].clientWidth;
-        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft - width;
+        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft + width;
         console.log(width);
 
     }
@@ -28,7 +75,7 @@ function HotspotSlider() {
     const prevSlide = (e) => {
         e.preventDefault();
         let width = carousalContainer[0].clientWidth;
-        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft + width;
+        carousalContainer[0].scrollLeft = carousalContainer[0].scrollLeft - width;
         console.log(width);
     }
 
@@ -40,6 +87,7 @@ function HotspotSlider() {
                     <div className="h-[100px] w-[200px] bg-[#bf912d] absolute  left-[-50px] skew-x-[-20deg]"></div>
                 </div >
                 <div className="sm:flex hidden gap-x-1 items-center">
+                    {/* {dataLength.map()} */}
                     <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
                     <div className="h-[3px] w-10 bg-[#ffc700] rounded"></div>
                     <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
@@ -52,7 +100,10 @@ function HotspotSlider() {
             <div className="px-2">
                 <div className="flex py-[8px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll snap-x carousal-container scrollbar-hide">
                     <div className="flex">
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        {data.map((item, index) => (
+                             <HotSpotSliderItem key={index} category={item.category} image={item.img} title={item.title} />
+                        ))}
+                        {/* <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <HotSpotSliderItem category={'TV SERIES'} image={beardman} title={"CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"} />
                         <HotSpotSliderItem category={'CELEBRITY'} image={kdrama} title={"Chris Rock Responds to Will Smith’s apology video"} />
                         <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
@@ -60,7 +111,7 @@ function HotspotSlider() {
                         <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
                         <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
+                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} /> */}
                     </div>
 
 

@@ -13,6 +13,11 @@ const BlogList = () => {
             <CategoryListItem />
             <CategoryListItem />
             <CategoryListItem />
+            <CategoryListItem />
+            <CategoryListItem />
+            <CategoryListItem />
+            <CategoryListItem />
+            <CategoryListItem />
 
         </div>
     )

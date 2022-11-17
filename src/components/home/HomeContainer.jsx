@@ -41,7 +41,7 @@ function HomeContainer() {
                 {/* sidebar */}
                 <div className="rounded">
                     <SidebarCategorySection category={"CELEBRITY GOSSIPS"} />
-                    <div className="h-[360px]">
+                    <div className="h-[395px]">
                         <SideAds bg={"white"} />
                     </div>
                     <SidebarCategorySection category={"MOVIES NEWS"} />

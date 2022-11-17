@@ -4,7 +4,7 @@ import { BsSearch } from 'react-icons/bs'
 
 const MobileMenu = ({ setShowMenu }) => {
     return (
-        <div className='fixed left-0 z-50 w-[100%] sm:w-[30%] h-[100vh] bg-white'>
+        <div className='fixed left-0 z-50 w-[100%] sm:w-[30%] h-[100vh] bg-white transition ease-in-out delay-500 duration-500'>
             <div className="flex justify-between items-center border-b p-2">
                 <img src="logobg.png" alt="" className="h-[40px]" />
                 <AiOutlineCloseCircle onClick={() => setShowMenu(false)} className='text-[#bf912d] text-right text-3xl cursor-pointer' />
@@ -16,13 +16,13 @@ const MobileMenu = ({ setShowMenu }) => {
                 </div>
             </div>
             <ul className='text-gray-600 uppercase p-2 font-[400]'>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Celebrity</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Entertainment</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">News</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Anime</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Games</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Movies</li>
-                <li className="cursor-pointer w-full leading-10 border-t-[2px]">Tv Shows</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Celebrity</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Entertainment</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">News</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Anime</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Games</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Movies</li>
+                <li className="cursor-pointer hover:text-[#bf912d] w-full leading-10 border-t-[2px]">Tv Shows</li>
             </ul>
             <div className="bg-gray-200 m-2 border font-[400] p-2">
                 <h1 className='uppercase text-[#bf912d] leading-10'>quick links</h1>
