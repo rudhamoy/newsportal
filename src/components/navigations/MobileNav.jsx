@@ -37,7 +37,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                         </div>
                         {clickFollow === true && (
                             <div className="menu z-40">
-                                <div className="absolute uppercase top-8 z-50 -right-10 bg-[#bf912d] w-[267px] h-[133px] border-t-4 border-[#bf912d] shadow-md rounded-md overflow-hidden">
+                                <div className="absolute uppercase top-8 z-50 -right-10 bg-[#bf912d] w-[267px] h-[149px] border-t-4 border-[#bf912d] shadow-md rounded-md overflow-hidden">
                                     <div>
                                         <p className="uppercase text-center text-white font-nunitoSans my-1">Find more content at</p>
                                         <div className="flex justify-around items-center p-3">
@@ -45,8 +45,8 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                                             <img src="new-logo-02.png" alt="" />
                                         </div>
                                     </div>
-                                    <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2">
-                                        <h1 className="uppercase text-[#393939] text-center text-[9px] font-nunitoSans">Follow us on</h1>
+                                    <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2 h-[60px]">
+                                        <h1 className="uppercase text-[#393939] text-center text-[9px] font-nunitoSans my-1">Follow us on</h1>
                                         <ul className="flex justify-around w-[100%]">
                                             <img className="h-[19px] w-[20px]" src={insta} alt="" />
                                             <img className="h-[19px] w-[20px]" src={facebook} alt="" />
@@ -90,7 +90,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
 
             <div className="flex items-center gap-x-3 mt-2">
                 <div role="button">
-                    <img src="home.png" alt="" className="h-[22px] w-[30px]" />
+                    <img src="home.png" alt="" className="h-[22px] w-[27px]" />
                 </div>
                 <div className='uppercase flex items-center gap-x-3 text-[12px] font-nunitoSans overflow-x-scroll p-1'>
                     <p>Celebrity</p>
