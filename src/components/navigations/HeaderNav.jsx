@@ -7,6 +7,13 @@ import { FcMenu } from 'react-icons/fc'
 import { BiSearch } from 'react-icons/bi'
 import { MdClose } from 'react-icons/md'
 
+import facebook from '../../assets/svg/facebook@4x.svg'
+import insta from '../../assets/svg/insta@4x.svg'
+import linkedin from '../../assets/svg/linkedin@4x.svg'
+import rss from '../../assets/svg/rss@4x.svg'
+import twitter from '../../assets/svg/twitter@4x.svg'
+import youtube from '../../assets/svg/youtube@4x.svg'
+
 import './navigation.css'
 import MobileNav from './MobileNav'
 
@@ -40,10 +47,10 @@ const HeaderNav = ({ setShowMenu }) => {
                                     onMouseEnter={() => {
                                         setClicked(true)
                                     }}
-                                 onMouseLeave={() => {
-                                     setClicked(false)
-                                 }}
-                                className=" flex justify-center items-center h-[100%]"
+                                    onMouseLeave={() => {
+                                        setClicked(false)
+                                    }}
+                                    className=" flex justify-center items-center h-[100%]"
                                 >
                                     <a className="flex items-center hover:text-[#bf912d]">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
@@ -77,18 +84,18 @@ const HeaderNav = ({ setShowMenu }) => {
                                         setOnClicked(false)
                                     }}
                                     className="flex justify-center items-center h-[100%]"
-                                    >
+                                >
                                     <a className="flex items-center hover:text-[#bf912d]">News <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {onClicked === true && (
-                                    <div 
-                                    className="menu z-40"
-                                    onMouseEnter={() => {
-                                        setOnClicked(true)
-                                    }}
-                                    onMouseLeave={() => {
-                                        setOnClicked(false)
-                                    }}
+                                    <div
+                                        className="menu z-40"
+                                        onMouseEnter={() => {
+                                            setOnClicked(true)
+                                        }}
+                                        onMouseLeave={() => {
+                                            setOnClicked(false)
+                                        }}
                                     >
                                         <ul className="absolute uppercase z-50 -right-6 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
                                             <li className='hover:text-[#bf912d]'><a href="#">Politics</a></li>
@@ -123,8 +130,8 @@ const HeaderNav = ({ setShowMenu }) => {
                                     <p className="text-[16px] font-nunitoSans">Follow</p>
                                 </div>
                                 {clickFollow === true && (
-                                    <div className="menu z-40">
-                                        <div className="absolute uppercase top-10 z-50 -right-10 bg-[#bf912d] w-[267px] h-[145px] border-t-4 border-[#bf912d] shadow-md rounded-md overflow-hidden">
+                                    <div className="follow z-40">
+                                        <div className="absolute uppercase top-10 z-50 -right-10 bg-[#bf912d] w-[267px] h-[149px] border-t-4 border-[#bf912d] shadow-md rounded-md overflow-hidden">
                                             <div>
                                                 <p className="uppercase text-center text-white font-nunitoSans my-1">Find more content at</p>
                                                 <div className="flex justify-around items-center p-3">
@@ -132,15 +139,15 @@ const HeaderNav = ({ setShowMenu }) => {
                                                     <img src="new-logo-02.png" alt="" />
                                                 </div>
                                             </div>
-                                            <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2 h-[57px]">
-                                                <h1 className="uppercase text-[#000000] text-center text-[9px] font-nunitoSans">Follow us on</h1>
+                                            <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2 h-[61px]">
+                                                <p className="uppercase text-[#000000] text-center text-[9px] font-nunitoSans my-1">Follow us on</p>
                                                 <ul className="flex justify-around w-[100%]">
-                                                    <img className="h-[19px] w-[20px]" src="instaMobi.png" alt="" />
-                                                    <img className="h-[19px] w-[20px]" src="facebookMobi.png" alt="" />
-                                                    <img className="h-[19px] w-[20px]" src="twitterMobi.png" alt="" />
-                                                    <img className="h-[19px] w-[20px]" src="youtubeMobi.png" alt="" />
-                                                    <img className="h-[19px] w-[20px]" src="linkedinMobi.png" alt="" />
-                                                    <img className="h-[19px] w-[20px]" src="rssMobi.png" alt="" />
+                                                <img className="h-[24px] w-[24px] cursor-pointer" src={insta} alt="" />
+                                                    <img className="h-[24px] w-[24px] cursor-pointer" src={facebook} alt="" />
+                                                    <img className="h-[24px] w-[24px] cursor-pointer" src={twitter} alt="" />
+                                                    <img className="h-[24px] w-[24px] cursor-pointer" src={youtube} alt="" />
+                                                    <img className="h-[24px] w-[24px] cursor-pointer" src={linkedin} alt="" />
+                                                    <img className="h-[24px] w-[24px] cursor-pointer" src={rss} alt="" />
                                                 </ul>
                                             </div>
                                         </div>
