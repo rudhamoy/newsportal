@@ -13,7 +13,7 @@ const VideoNewsContainer = ({ image }) => {
   return (
     <div className="sm:mt-6 flex flex-col justify-center items-center">
       <div className="w-[100vw] sm:w-[1264px] mb-5">
-        <p className="hidden sm:flex items-center gap-x-1">Home <MdArrowForwardIos className="text-[#bf912d]" /> <span className="whitespace-nowrap">TV News</span> <MdArrowForwardIos className="text-[#bf912d]" /> <span className="line-clamp-1 sm:line-clamp-none">Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</span></p>
+      <p className="flex items-center gap-x-1 text-[14px] sm:text-[16px] p-2 text-[#6d6d6d] font-[300px]"><span>Home</span> <MdArrowForwardIos className="text-[#bf912d] " /> <span className="whitespace-nowrap">TV News</span> <MdArrowForwardIos className="text-[#bf912d]" /> <span className="line-clamp-1 sm:line-clamp-none">Joel McHale's Starmen Take Center Stage in Stargirl Season 3 Photos</span></p>
 
         <Advertisement />
 

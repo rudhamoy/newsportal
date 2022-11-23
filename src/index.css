@@ -39,6 +39,12 @@ code {
   background: rgba(23, 22, 22, 0.689)
 }
 
+/* 
+.mobileFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
 
 .video-responsive {
   overflow: hidden;

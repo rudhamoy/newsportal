@@ -16,18 +16,19 @@ function ArcheiveContainer() {
   return (
     <div className="px-2 flex flex-col justify-center items-center">
       <div className="w-[95vw] sm:w-[1264px] mb-5">
-        <div className="sm:mt-5 flex flex-row items-center gap-2 w-[95vw] sm:w-[1264px]">
+        <div className="sm:mt-5 flex flex-row items-center gap-2 w-[95vw] sm:w-[1264px] font-nunitoSans">
           <div>
             <p className="font-bold sm:text-[30px] text-[20px]">TV News</p>
             <p className="flex items-center gap-x-1 whitespace-nowrap text-[16px] sm:text-base">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News</p>
           </div>
-          <div className="w-[1px] bg-slate-400 sm:h-[80px] h-[40px]"></div>
+          <div className="w-[2px] bg-[#6d6d6d] opacity-[0.102] sm:h-[62px] h-[40px]"></div>
           <div>
-            <p className="text-[14px] sm:text-base]">Latest News Updates on <span className="font-semibold">"Money Heist"</span></p>
+            <p className="text-[14px] sm:text-base] font-nunitoSans">Latest News Updates on <span className="font-semibold">"Money Heist"</span></p>
           </div>
         </div>
+          <div className=" bg-[#6d6d6d] opacity-[0.102] h-[2px] w-[838px] mt-1" />
 
-        <div className="mt-[13px]" >
+        <div className="mt-[11px]" >
           <div className="flex flex-col sm:flex-row justify-between  w-[95vw] sm:w-[1264px]">
             <div className="">
               <CategoryListItem />

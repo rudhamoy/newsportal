@@ -2,6 +2,13 @@ import React, { useState } from 'react'
 import { MdClose } from 'react-icons/md'
 import { BsSearch } from 'react-icons/bs'
 
+import facebook from '../../assets/svg/facebook.svg'
+import insta from '../../assets/svg/insta.svg'
+import linkedin from '../../assets/svg/linkedin.svg'
+import rss from '../../assets/svg/rss.svg'
+import twitter from '../../assets/svg/twitter.svg'
+import youtube from '../../assets/svg/youtube.svg'
+
 const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
     const [showSearch, setShowSearch] = useState(false)
     return (
@@ -11,7 +18,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                 {/* mobile menu */}
                 <div className="flex items-center gap-x-3 w-[72%]">
                     <div role="button" onClick={() => setShowMenu(true)} className="">
-                        <img src="mobileMenu.png" alt="" className="h-[25px]" />
+                        <img src="mobileMenu.png" alt="" className="h-[22px]" />
                     </div>
                     <img src="realLogo.png" className="h-[30px]" alt="" />
                 </div>
@@ -24,7 +31,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
 
                         }} className="flex items-center gap-x-1">
                             {/* icon and image */}
-                            {clickFollow !== true ? <img src="mobileShare.png" alt="" className="h-[25px]" /> : <MdClose className="text-[#bf912d] text-3xl" />}
+                            {clickFollow !== true ? <img src="mobileShare.png" alt="" className="h-[22px]" /> : <MdClose className="text-[#bf912d] text-3xl" />}
 
                             {/* <p className="text-[16px] font-futura2">Follow</p> */}
                         </div>
@@ -41,12 +48,12 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                                     <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2">
                                         <h1 className="uppercase text-[#393939] text-center text-[9px] font-nunitoSans">Follow us on</h1>
                                         <ul className="flex justify-around w-[100%]">
-                                            <img className="h-[19px] w-[20px]" src="instaMobi.png" alt="" />
-                                            <img className="h-[19px] w-[20px]" src="facebookMobi.png" alt="" />
-                                            <img className="h-[19px] w-[20px]" src="twitterMobi.png" alt="" />
-                                            <img className="h-[19px] w-[20px]" src="youtubeMobi.png" alt="" />
-                                            <img className="h-[19px] w-[20px]" src="linkedinMobi.png" alt="" />
-                                            <img className="h-[19px] w-[20px]" src="rssMobi.png" alt="" />
+                                            <img className="h-[19px] w-[20px]" src={insta} alt="" />
+                                            <img className="h-[19px] w-[20px]" src={facebook} alt="" />
+                                            <img className="h-[19px] w-[20px]" src={twitter} alt="" />
+                                            <img className="h-[19px] w-[20px]" src={youtube} alt="" />
+                                            <img className="h-[19px] w-[20px]" src={linkedin} alt="" />
+                                            <img className="h-[19px] w-[20px]" src={rss} alt="" />
                                         </ul>
                                     </div>
                                 </div>
@@ -61,7 +68,7 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
                             setShowSearch(!showSearch)
                         }}
                     >
-                        <img src="mobileSearch.png" alt="" className="h-[25px]" />
+                        <img src="mobileSearch.png" alt="" className="h-[22px]" />
                     </div>
 
                 </div>
@@ -83,12 +90,15 @@ const MobileNav = ({ setShowMenu, setClickFollow, clickFollow }) => {
 
             <div className="flex items-center gap-x-3 mt-2">
                 <div role="button">
-                    <img src="home.png" alt="" className="h-[20px] w-[20px]" />
+                    <img src="home.png" alt="" className="h-[22px] w-[30px]" />
                 </div>
-                <div className='uppercase flex items-center gap-x-3 text-[12px] font-futura2'>
+                <div className='uppercase flex items-center gap-x-3 text-[12px] font-nunitoSans overflow-x-scroll p-1'>
                     <p>Celebrity</p>
                     <p>Entertainment</p>
                     <p className="whitespace-nowrap">Tv News</p>
+                    <p className="whitespace-nowrap">Web Stories</p>
+                    <p className="whitespace-nowrap">Web Stories</p>
+                    <p className="whitespace-nowrap">Web Stories</p>
                     <p className="whitespace-nowrap">Web Stories</p>
                 </div>
             </div>

@@ -30,7 +30,7 @@ const HeaderNav = ({ setShowMenu }) => {
                     {/* middle */}
                     <div className="w-[65%] h-[100%]">
                         <div className="flex items-center justify-around font-semibold text-[16px] px-6 uppercase h-[100%]">
-                            <div className="cursor-pointer">CELEBRITY</div>
+                            <div className="cursor-pointer hover:text-[#bf912d]">CELEBRITY</div>
 
                             <div
                                 className="dropdown relative h-[100%]"
@@ -45,7 +45,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                  }}
                                 className=" flex justify-center items-center h-[100%]"
                                 >
-                                    <a className="flex items-center">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
+                                    <a className="flex items-center hover:text-[#bf912d]">ENTERTAINMENT <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {clicked === true && (
                                     <div
@@ -58,11 +58,11 @@ const HeaderNav = ({ setShowMenu }) => {
                                         }}
                                     >
                                         <ul className="absolute uppercase  z-50 -right-10 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
-                                            <li><a href="#">Politics</a></li>
-                                            <li><a href="#">Technology</a></li>
-                                            <li><a href="#">Gaming</a></li>
-                                            <li><a href="#">Sports</a></li>
-                                            <li><a href="#">Trending</a></li>
+                                            <li className="hover:text-[#bf912d]"><a href="#">Politics</a></li>
+                                            <li className="hover:text-[#bf912d]"><a href="#">Technology</a></li>
+                                            <li className="hover:text-[#bf912d]"><a href="#">Gaming</a></li>
+                                            <li className="hover:text-[#bf912d]"><a href="#">Sports</a></li>
+                                            <li className="hover:text-[#bf912d]"><a href="#">Trending</a></li>
                                         </ul>
                                     </div>
                                 )}
@@ -78,7 +78,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                     }}
                                     className="flex justify-center items-center h-[100%]"
                                     >
-                                    <a className="flex items-center">News <BiChevronDown className="text-lg" /></a>
+                                    <a className="flex items-center hover:text-[#bf912d]">News <BiChevronDown className="text-lg" /></a>
                                 </div>
                                 {onClicked === true && (
                                     <div 
@@ -91,23 +91,23 @@ const HeaderNav = ({ setShowMenu }) => {
                                     }}
                                     >
                                         <ul className="absolute uppercase z-50 -right-6 bg-white w-[240px] p-2 border-t-4 border-[#bf912d] shadow-md rounded-sm">
-                                            <li><a href="#">Politics</a></li>
-                                            <li><a href="#">Technology</a></li>
-                                            <li><a href="#">Gaming</a></li>
-                                            <li><a href="#">Sports</a></li>
-                                            <li><a href="#">Trending</a></li>
+                                            <li className='hover:text-[#bf912d]'><a href="#">Politics</a></li>
+                                            <li className='hover:text-[#bf912d]'><a href="#">Technology</a></li>
+                                            <li className='hover:text-[#bf912d]'><a href="#">Gaming</a></li>
+                                            <li className='hover:text-[#bf912d]'><a href="#">Sports</a></li>
+                                            <li className='hover:text-[#bf912d]'><a href="#">Trending</a></li>
                                         </ul>
                                     </div>
                                 )}
                             </div>
-                            <div className="cursor-pointer">ANIME</div>
-                            <div className="cursor-pointer">GAMES</div>
-                            <div className="cursor-pointer">MOVIES</div>
-                            <div className="cursor-pointer">TV SHOW</div>
+                            <div className="cursor-pointer hover:text-[#bf912d]">ANIME</div>
+                            <div className="cursor-pointer hover:text-[#bf912d]">GAMES</div>
+                            <div className="cursor-pointer hover:text-[#bf912d]">MOVIES</div>
+                            <div className="cursor-pointer hover:text-[#bf912d]">TV SHOW</div>
                         </div>
                     </div>
                     {/* right */}
-                    <div className="w-[15%]">
+                    <div className="w-[15%] ">
                         <div className=" flex justify-around items-center text-[#bf912d] border-l-2">
                             <div role="button" onClick={() => setShowMenu(true)} className="">
                                 <img src="menuu.png" alt="" />
@@ -124,7 +124,7 @@ const HeaderNav = ({ setShowMenu }) => {
                                 </div>
                                 {clickFollow === true && (
                                     <div className="menu z-40">
-                                        <div className="absolute uppercase top-10 z-50 -right-10 bg-[#bf912d] w-[267px] h-[133px] border-t-4 border-[#bf912d] shadow-md rounded-md">
+                                        <div className="absolute uppercase top-10 z-50 -right-10 bg-[#bf912d] w-[267px] h-[145px] border-t-4 border-[#bf912d] shadow-md rounded-md overflow-hidden">
                                             <div>
                                                 <p className="uppercase text-center text-white font-nunitoSans my-1">Find more content at</p>
                                                 <div className="flex justify-around items-center p-3">
@@ -132,8 +132,8 @@ const HeaderNav = ({ setShowMenu }) => {
                                                     <img src="new-logo-02.png" alt="" />
                                                 </div>
                                             </div>
-                                            <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2">
-                                                <h1 className="uppercase text-[#393939] text-center text-[9px] font-nunitoSans">Follow us on</h1>
+                                            <div className="bg-gray-200 border-t flex flex-col justify-center items-center p-2 h-[57px]">
+                                                <h1 className="uppercase text-[#000000] text-center text-[9px] font-nunitoSans">Follow us on</h1>
                                                 <ul className="flex justify-around w-[100%]">
                                                     <img className="h-[19px] w-[20px]" src="instaMobi.png" alt="" />
                                                     <img className="h-[19px] w-[20px]" src="facebookMobi.png" alt="" />

@@ -50,6 +50,27 @@ const data = [
         img: beardman,
         title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
     },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    {
+        category: "TV SERIES",
+        img: beardman,
+        title: "CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"
+    },
+    
 ]
 
 
@@ -57,12 +78,15 @@ function HotspotSlider() {
 
     const [currentPosition, setCurrentPosition] = useState(0)
     const dataLength = data.length
-    const showIndicator = Math.round(dataLength / 3)
-    console.log(showIndicator)
 
     const carousalContainer = document.getElementsByClassName('carousal-container');
 
-    // console.log(carousalContainer[0].clientWidth);
+    // const showIndicator = Math.round(dataLength / 3);
+    // console.log(showIndicator, '= indicator')
+
+    // const totalWidth = carousalContainer[0].clientWidth * showIndicator
+    // console.log(totalWidth, '= totalWidth')
+
     const nextSlide = (e) => {
         e.preventDefault();
 
@@ -79,6 +103,20 @@ function HotspotSlider() {
         console.log(width);
     }
 
+    // const el = <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
+    // const showIndicatorComp = () => {
+    //    return (
+    //     <div className='flex gap-x-3'>
+    //         {data.map((_) => {
+                
+    //             return (
+    //                 el
+    //             )
+    //         })}
+    //     </div>
+    //    )
+    // }
+
     return (
         <div className="w-[95vw] sm:w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] relative drop-shadow-container">
             <div className="flex justify-between rounded-tl-lg">
@@ -87,7 +125,6 @@ function HotspotSlider() {
                     <div className="h-[100px] w-[200px] bg-[#bf912d] absolute  left-[-50px] skew-x-[-20deg]"></div>
                 </div >
                 <div className="sm:flex hidden gap-x-1 items-center">
-                    {/* {dataLength.map()} */}
                     <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
                     <div className="h-[3px] w-10 bg-[#ffc700] rounded"></div>
                     <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>

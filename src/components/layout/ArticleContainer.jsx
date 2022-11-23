@@ -1,13 +1,9 @@
 import React from 'react'
-import facebookColoredIcon from '../../assets/icons/facebook-colored-icon.svg';
-import linkedinColoredIcon from '../../assets/icons/linkedin-colored-icon.svg';
-import whatsappColoredIcon from '../../assets/icons/whatsapp-colored-icon.svg';
-import twiterColoredIcon from '../../assets/icons/twiter-colored-icon.svg';
-import emailColoredIcon from '../../assets/icons/email-colored-icon.svg';
-import { AiOutlineMail } from 'react-icons/ai';
 import girlboobs from '../../assets/images/girlboobs.png'
 import beardman from '../../assets/images/beard-man.png';
 import EmbedYoutube from './EmbedYoutube';
+import NewsFooterAuthor from './NewsFooterAuthor';
+import NewsHeaderAuthor from './NewsHeaderAuthor';
 
 const ArticleContainer = ({ image }) => {
 
@@ -15,30 +11,13 @@ const ArticleContainer = ({ image }) => {
 
     return (
         <div className='bg-white rounded-md p-4 mt-[18px] w-[100vw] sm:w-[837px]'>
-            <h1 className="text-[30px] sm:text-[36px] font-nunitoSans text-[#000000] font-semibold">Kung Fu Panda: The Dragon Knight Season 2
+            <h1 className="text-[30px] sm:text-[36px] leading-[35px] sm:leading-[42px] font-semibold font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
-            <p className="sm:text-[20px] text-[18px] text-[#6d6d6d] font-proxima font-[300]">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
+            <h2 className="mt-[14px] text-[18px] sm:text-[20px] text-[#6d6d6d] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</h2>
             <div className="w-[100%] my-3 border bg-gray-500 h-[1px]"></div>
             {/* author  */}
-            <div>
-                <div className="flex flex-row justify-between sm:items-center items-end gap-x-2">
-                    <div className="flex gap-x-2 items-center">
-                        <img src="author2.png" alt="" />
-                        <div className="text-[13px] text-[#6d6d6d]">
-                            <p className=''>by <span className="text-[16px] text-[#000000] font-nunitoSans font-semibold">Manjeet Mahato</span></p>
-                            <p className="font-proxima">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
-                        </div>
-                    </div>
-                    <div className="hidden sm:flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
-                        <img src={facebookColoredIcon} alt="" />
-                        <img height={24} width={24} src={linkedinColoredIcon} alt="" />
-                        <img height={24} width={24} src={whatsappColoredIcon} alt="" />
-                        <img height={24} width={24} src={twiterColoredIcon} alt="" />
-                        <img height={24} width={24} src="email.png" alt="" />
-                    </div>
-                </div>
-            </div>
+            <NewsHeaderAuthor />
             {/* featured img */}
             {image ? (<div className="my-3 w-[90vw] sm:w-[804px] sm:h-[453px] rounded-[5px] relative overflow-hidden overflowHidden">
                 <img src={image} alt="" className="w-[100%] h-[100%]" />
@@ -125,7 +104,7 @@ const ArticleContainer = ({ image }) => {
                         <div className='bigFadeBottom absolute bottom-0 left-0 right-0' />
                     </div>
 
-                    <p className='text-[18px]'>
+                    <p className='text-[18px] font-sans'>
                         Po might just be the laziest, clumsiest panda in the Valley of Peace, but he secretly dreams of becoming a kung fu legend. When the villainous snow leopard Tai Lung threatens Po's homeland, the hapless panda is chosen to fulfil an ancient prophecy and defend the Valley from attack.
                     </p>
 
@@ -185,26 +164,7 @@ const ArticleContainer = ({ image }) => {
                 </div>
 
                 {/* author */}
-                <div className="flex items-center bg-[#f4f4f4] rounded-[4px] p-4 gap-x-2">
-                    <div className="p-[2px] border-2 border-black rounded-full">
-                        <img className="rounded-full" src="Layer_17.png" alt="" />
-                    </div>
-                    <div>
-                        <p className="text-[16px] text-[#bf912d] font-nunitoSans mb-[5px]">Manjeet Mahato</p>
-                        <p className="text-[14px] text-[#4b4b4b] font-nunitoSans">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
-
-                        <div className="flex items-center gap-x-2">
-                            <p className="text-[#bf912d] text-[12px] font-nunitoSans">Reach me at :</p>
-                            <div className="flex gap-x-2 items-center cursor-pointer">
-                                <img height={10} width={10} src={facebookColoredIcon} alt="" />
-                                <img height={16} width={16} src={linkedinColoredIcon} alt="" />
-                                <img height={16} width={16} src={whatsappColoredIcon} alt="" />
-                                <img height={16} width={16} src={twiterColoredIcon} alt="" />
-                                <img height={16} width={16} src="email.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <NewsFooterAuthor />
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
                     <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px] font-nunitoSans">POST A COMMENT</button>

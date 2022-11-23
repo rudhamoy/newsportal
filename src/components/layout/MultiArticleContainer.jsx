@@ -4,6 +4,8 @@ import linkedinColoredIcon from '../../assets/icons/linkedin-colored-icon.svg';
 import whatsappColoredIcon from '../../assets/icons/whatsapp-colored-icon.svg';
 import twiterColoredIcon from '../../assets/icons/twiter-colored-icon.svg';
 import { AiOutlineMail } from 'react-icons/ai';
+import NewsFooterAuthor from './NewsFooterAuthor';
+import NewsHeaderAuthor from './NewsHeaderAuthor';
 
 const MultiArticleContainer = ({ image }) => {
     const tagListClass = "bg-[#f4f4f4] cursor-pointer rounded-md p-[1px] px-3 hover:border-[1px] hover:border-[#e4e4e4] transition ease-in-out delay-300"
@@ -13,27 +15,10 @@ const MultiArticleContainer = ({ image }) => {
             <h1 className="text-[30px] sm:text-[36px] leading-[35px] sm:leading-[42px] font-semibold font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2
                 Potential Release Date and More
             </h1>
-            <p className="text-[20px] text-[#6d6d6d] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</p>
+            <h2 className="mt-[14px] text-[18px] sm:text-[20px] text-[#6d6d6d] font-nunitoSans">Kung Fu Panda: The Dragon Knight Season 2 has already not been announced and here we have its Expected Release Date, Cast, and possible Plot Info.</h2>
             <div className="w-[100%] my-3 border bg-gray-500 h-[1px]"></div>
             {/* author  */}
-            <div>
-                <div className="flex flex-row justify-between sm:items-center items-end gap-x-2">
-                    <div className="flex gap-x-2 items-center">
-                        <img src="author2.png" alt="" />
-                        <div className="text-[13px] text-[#6d6d6d]">
-                            <p className=''>by <span className="text-[16px] text-[#000000] font-nunitoSans font-semibold">Manjeet Mahato</span></p>
-                            <p className="font-nunitoSans">Published On <span className="text-black font-semibold">August 5, 2022</span> (Updated On <span className="text-black font-semibold">August 5, 2022</span>)</p>
-                        </div>
-                    </div>
-                    <div className="hidden sm:flex flex-row items-center sm:gap-x-3 gap-x-2 ml-[-60px]">
-                        <img src={facebookColoredIcon} alt="" />
-                        <img height={24} width={24} src={linkedinColoredIcon} alt="" />
-                        <img height={24} width={24} src={whatsappColoredIcon} alt="" />
-                        <img height={24} width={24} src={twiterColoredIcon} alt="" />
-                        <img height={24} width={24} src="email.png" alt="" />
-                    </div>
-                </div>
-            </div>
+            <NewsHeaderAuthor />
             {/* featured img */}
             <div className="my-3 sm:h-[453px] w-[90vw] sm:w-[804px] relative rounded-md overflow-hidden">
                 <img className="h-[100%] w-[100%]" src="Layer1.png" alt="" />
@@ -150,26 +135,7 @@ const MultiArticleContainer = ({ image }) => {
                 </div>
 
                 {/* author */}
-                <div className="flex items-center bg-[#f4f4f4] rounded-[4px] p-4 gap-x-2">
-                    <div className="p-[2px] border-2 border-black rounded-full">
-                        <img className="rounded-full" src="Layer_17.png" alt="" />
-                    </div>
-                    <div>
-                        <p className="text-[16px] text-[#bf912d] font-nunitoSans mb-[5px]">Manjeet Mahato</p>
-                        <p className="text-[14px] text-[#4b4b4b] font-nunitoSans">Well, a Marvel and DC Comics Nerd by Passion, Content Writer, and Designer by Profession. Completed BSc. Graphic and animation from MCU, Bhopal</p>
-
-                        <div className="flex items-center gap-x-2">
-                            <p className="text-[#bf912d] text-[12px] font-nunitoSans">Reach me at :</p>
-                            <div className="flex gap-x-2 items-center cursor-pointer">
-                                <img height={10} width={10} src={facebookColoredIcon} alt="" />
-                                <img height={16} width={16} src={linkedinColoredIcon} alt="" />
-                                <img height={16} width={16} src={whatsappColoredIcon} alt="" />
-                                <img height={16} width={16} src={twiterColoredIcon} alt="" />
-                                <img height={16} width={16} src="email.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <NewsFooterAuthor />
 
                 <div className="flex justify-center items-center mt-[32px] mb-[53px]">
                     <button className="rounded-[5px] w-[297px] h-[37px] bg-[#bf912d] text-white text-[16px] font-nunitoSans">POST A COMMENT</button>

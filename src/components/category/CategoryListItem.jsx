@@ -22,7 +22,7 @@ function CategoryListItem({ width }) {
                         <p className="text-[10px] font-bold font-nunitoSans text-[#bf912d] mb-[5px] mt-[5px] sm:mt-0">TV SERIES</p>
                         <h3 className="text-[16px] sm:text-[18px] font-nunitoSans leading-[18px] font-semibold">The Fabulous Season 1: Release Date Update And What We Know</h3>
                         <p className='text-[#6d6d6d] text-[15px] font-[300] font-sans hidden sm:block mt-[5px]'>Rovio revealed that a brand-new, in-depth Angry Birds television series was developing for a 2020 debut in late 2018. Early in 2020, it was announced</p>
-                        <p className="text-[#737373] text-[10px] font-[300] font-nunitoSans  absolute bottom-0 sm:block hidden">NOVEMBER 2, 2022</p>
+                        <p className="text-[#737373] text-[12px] font-[300] font-nunitoSans  absolute bottom-0 sm:block hidden">NOVEMBER 2, 2022</p>
                     </div>
                 </div>
             </div>

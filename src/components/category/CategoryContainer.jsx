@@ -20,10 +20,7 @@ function CategoryContainer() {
                             <p className="font-bold sm:text-[30px] text-[20px]">TV News</p>
                             <p className="flex items-center gap-x-1 whitespace-nowrap text-[16px] sm:text-base">Home <MdArrowForwardIos className="text-[#bf912d]" /> TV News</p>
                         </div>
-                        <div className="w-[1px] bg-slate-400 sm:h-[80px] h-[40px]"></div>
-                        <div>
-                            <p className="text-[14px] sm:text-base]">Latest News Updates on <span className="font-semibold">"Money Heist"</span></p>
-                        </div>
+                       
                     </div>
 
 

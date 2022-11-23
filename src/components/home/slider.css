@@ -39,3 +39,18 @@
     min-width: 300px;
     max-width: 300px;
   } */
+  
+  .featured__list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .container {
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    overflow-y: scroll;
+    
+  }
+  
+  .child {
+    scroll-snap-align: start;
+  }
