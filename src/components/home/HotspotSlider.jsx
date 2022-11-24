@@ -7,6 +7,7 @@ import leftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
 import { FiChevronLeft } from 'react-icons/fi';
 import { FiChevronRight } from 'react-icons/fi';
 import HotSpotSliderItem from './HotSpotSliderItem';
+import HotspotCarousel from './HotspotCarousel';
 
 
 const data = [
@@ -76,16 +77,8 @@ const data = [
 
 function HotspotSlider() {
 
-    const [currentPosition, setCurrentPosition] = useState(0)
-    const dataLength = data.length
 
     const carousalContainer = document.getElementsByClassName('carousal-container');
-
-    // const showIndicator = Math.round(dataLength / 3);
-    // console.log(showIndicator, '= indicator')
-
-    // const totalWidth = carousalContainer[0].clientWidth * showIndicator
-    // console.log(totalWidth, '= totalWidth')
 
     const nextSlide = (e) => {
         e.preventDefault();
@@ -103,20 +96,6 @@ function HotspotSlider() {
         console.log(width);
     }
 
-    // const el = <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
-    // const showIndicatorComp = () => {
-    //    return (
-    //     <div className='flex gap-x-3'>
-    //         {data.map((_) => {
-                
-    //             return (
-    //                 el
-    //             )
-    //         })}
-    //     </div>
-    //    )
-    // }
-
     return (
         <div className="w-[95vw] sm:w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] relative drop-shadow-container">
             <div className="flex justify-between rounded-tl-lg">
@@ -131,7 +110,11 @@ function HotspotSlider() {
                 </div>
                 <div className="w-[160px]"></div>
             </div>
-            <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
+
+            <div>
+                <HotspotCarousel data={data} />
+            </div>
+            {/* <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
                 <FiChevronLeft className="text-[15px] text-[#bf912d] " />
             </div>
             <div className="px-2">
@@ -140,15 +123,6 @@ function HotspotSlider() {
                         {data.map((item, index) => (
                              <HotSpotSliderItem key={index} category={item.category} image={item.img} title={item.title} />
                         ))}
-                        {/* <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'TV SERIES'} image={beardman} title={"CSI: Vegas Season 2 Release Date, Cast, Plot, and Everything you need to know about the series"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={kdrama} title={"Chris Rock Responds to Will Smith’s apology video"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={beardman} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} />
-                        <HotSpotSliderItem category={'CELEBRITY'} image={girlboobs} title={"Shama Sikandar Flaunts in New Instagram Hot Pictures"} /> */}
                     </div>
 
 
@@ -156,7 +130,7 @@ function HotspotSlider() {
             </div>
             <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500 drop-shadow-3xl">
                 <FiChevronRight className="text-[15px] text-[#bf912d]" />
-            </div>
+            </div> */}
             <div className="flex sm:hidden gap-x-1 items-center pb-1 mx-[40%]">
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
                 <div className="h-[3px] w-10 bg-[#bf912d] rounded"></div>

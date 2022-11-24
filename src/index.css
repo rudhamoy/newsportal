@@ -61,6 +61,34 @@ code {
   position: absolute;
 }
 
+.customArrowLeft {
+  /* background: white !important;
+  height: 30px !important;
+  width: 30px !important; */
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 36%;
+  left: 0.5%;
+  filter: drop-shadow(0px 3px 2.5px rgba(0,0,0,0.35));
+}
+
+.customArrowRight {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 36%;
+  right: 0.5%;
+  filter: drop-shadow(0px 3px 2.5px rgba(0,0,0,0.35));
+}
+
+/* .dotClass {
+  width: 30px;
+} */
 
 @tailwind base;
 @tailwind components;

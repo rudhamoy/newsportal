@@ -6,6 +6,8 @@ import bikini from '../../assets/images/bikini.png';
 import walker from '../../assets/images/walker.png';
 import VisualStoriesItem from './VisualStoriesItem';
 
+import Slider from "react-slick";
+
 import './slider.css'
 
 const data = [
@@ -49,40 +51,61 @@ const data = [
 
 
 function VisualStoriesSlider() {
-    const [currentIndex, setCurrentIndex] = useState(0)
 
-
-    const nextSlide = () => {
-        if (currentIndex <= data.length) {
-            setCurrentIndex(currentIndex + 1)
-        }
-        console.log(currentIndex)
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={`customArrowRight`}
+                style={{ ...style, zIndex: 10, }}
+                onClick={onClick}
+            >
+                <FiChevronRight onClick={onClick} className="text-[26px] -mt-[20px] cursor-pointer text-[#bf912d] bg-white rounded-full" />
+            </div>
+        );
     }
 
-    const prevSlide = () => {
-        if (currentIndex !== 0) {
-            setCurrentIndex(currentIndex - 1)
-        }
-        console.log(currentIndex)
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={`customArrowLeft`}
+                style={{ ...style, zIndex: 10, }}
+                onClick={onClick}
+            >
+                <FiChevronLeft onClick={onClick} className="text-[26px] -mt-[20px] cursor-pointer text-[#bf912d] bg-white rounded-full" />
+            </div>
+        );
     }
-    console.log(currentIndex)
 
-    // const carousalContainer = document.getElementsByClassName('container');
+    const settings = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1.7,
+                    slidesToScroll: 1,
+                    initialSlide: 1.7
+                }
+            },
+        ]
+    };
 
-    // const nextSlide = (e) => {
-    //     e.preventDefault();
-    //     let width = carousalContainer.clientWidth;
-    //     carousalContainer.scrollLeft = carousalContainer.scrollLeft - width;
-    //     console.log(width);
-
-    // }
-
-    // const prevSlide = (e) => {
-    //     e.preventDefault();
-    //     let width = carousalContainer.clientWidth;
-    //     carousalContainer.scrollLeft = carousalContainer.scrollLeft + width;
-    //     console.log(width);
-    // }
 
     return (
         <div className="h-[395px] w-[95vw] sm:w-[839px] mt-[30px] rounded-[4px] p-2 bg-white relative drop-shadow-container">
@@ -99,29 +122,23 @@ function VisualStoriesSlider() {
                 </div>
             </div>
 
-            {/* Navigator */}
-            <div role="button" onClick={prevSlide} className=" absolute cursor-pointer top-[50%] left-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
-                <FiChevronLeft className="text-[15px] text-[#bf912d] " />
-            </div>
-            <div role="button" onClick={nextSlide} className=" absolute cursor-pointer top-[50%] right-3 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
-                <FiChevronRight className="text-[15px] text-[#bf912d] " />
-            </div>
 
             {/* container */}
-                <div className='overflowHidden'>
-                <div className='flex gap-x-2 p-1 overflow-x-scroll w-[90vw] sm:w-[811px] border'>
+            <div className='overflowHidden mt-[10px]'>
+                <div className='overflow-x-scroll w-[90vw] sm:w-[811px] border rounded-[4px] p-1 py-2'>
+                    <Slider {...settings} className="px-2 mt-1">
                         {data.map((item, index) => {
                             return (
-                                <div  key={index}>
+                                <div key={index}>
                                     <VisualStoriesItem
-                                        styles={{ transform: `translate(-${currentIndex * 100}%)` }}
                                         image={item.img}
                                         title={item.title} />
                                 </div>
                             )
                         })}
+                    </Slider>
                 </div>
-                </div>
+            </div>
         </div>
     )
 }
