@@ -2,10 +2,10 @@ import React from 'react'
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import { CiFacebook } from 'react-icons/ci'
 import { FaLinkedinIn } from 'react-icons/fa'
-import instagramIcon from '../../assets/icons/insta.svg';
-import facebookIcon from '../../assets/icons/facebook.svg';
-import twitterIcon from '../../assets/icons/twitter.svg';
-import linkedinIcon from '../../assets/icons/linkedin.svg';
+import instagramIcon from '../../assets/svg/insta@4x.svg';
+import facebookIcon from '../../assets/svg/facebook@4x.svg';
+import twitterIcon from '../../assets/svg/twitter@4x.svg';
+import linkedinIcon from '../../assets/svg/linkedin@4x.svg';
 import nadiaUsman from '../../assets/images/nadia-usman.png';
 const AuthorCard = () => {
     return (
