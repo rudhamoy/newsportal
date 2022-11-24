@@ -14,7 +14,7 @@ function CategoryContainer() {
     return (
         <>
             <div className="px-2 flex flex-col justify-center items-center">
-                <div className="w-[95vw] sm:w-[1264px] mb-5">
+                <div className="w-[95vw] sm:w-[1264px] mt-2 mb-5">
                     <div className="sm:mt-5 flex flex-row items-center gap-2 w-[95vw] sm:w-[1264px]">
                         <div>
                             <p className="font-bold sm:text-[30px] text-[20px]">TV News</p>
