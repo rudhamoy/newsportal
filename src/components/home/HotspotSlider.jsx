@@ -97,9 +97,9 @@ function HotspotSlider() {
     }
 
     return (
-        <div className="w-[95vw] sm:w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] relative drop-shadow-container">
-            <div className="flex justify-between rounded-tl-lg">
-                <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden rounded-tl-lg" >
+        <div className="w-[95vw] sm:w-[1264px] h-[150px] bg-[#ffffff] mt-4 rounded-[5px] overflow-hidden relative drop-shadow-container">
+            <div className="flex justify-between rounded-[5px]">
+                <div className="flex items-center gap-x-2 relative  w-[160px] overflow-hidden " >
                     <p className="text-[#ffffff] text-[20px] z-[1] px-[10px] font-nunitoSans">HOT SPOT</p>
                     <div className="h-[100px] w-[200px] bg-[#bf912d] absolute  left-[-50px] skew-x-[-20deg]"></div>
                 </div >
@@ -114,23 +114,6 @@ function HotspotSlider() {
             <div>
                 <HotspotCarousel data={data} />
             </div>
-            {/* <div onClick={prevSlide} className="absolute cursor-pointer top-[45%] left-2 p-2  rounded-full bg-white shadow-xl border-gray-500 z-[1] drop-shadow-3xl">
-                <FiChevronLeft className="text-[15px] text-[#bf912d] " />
-            </div>
-            <div className="px-2">
-                <div className="flex py-[8px] relative  w-[100%] overflow-hidden scroll-smooth overflow-x-scroll snap-x carousal-container scrollbar-hide">
-                    <div className="flex">
-                        {data.map((item, index) => (
-                             <HotSpotSliderItem key={index} category={item.category} image={item.img} title={item.title} />
-                        ))}
-                    </div>
-
-
-                </div>
-            </div>
-            <div onClick={nextSlide} className="absolute cursor-pointer  right-2 top-[45%] p-2  rounded-full bg-white shadow-xl border-gray-500 drop-shadow-3xl">
-                <FiChevronRight className="text-[15px] text-[#bf912d]" />
-            </div> */}
             <div className="flex sm:hidden gap-x-1 items-center pb-1 mx-[40%]">
                 <div className="h-[3px] w-10 bg-[#d7d7d7] rounded"></div>
                 <div className="h-[3px] w-10 bg-[#bf912d] rounded"></div>
